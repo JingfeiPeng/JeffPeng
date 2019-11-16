@@ -2,13 +2,7 @@
   "name": "jeff-web",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "node server.js",
-    "postinstall": "ng build -prod",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+
   },
   "engines": {
     "node": "10.16.3",
