@@ -2,3 +2,28 @@
     height:100vh;
     background: linear-gradient(to bottom, white, #eadce3);
 }
+
+#text{
+	font-size: 20px;
+}
+
+#aboutme{
+	padding-top:50px;
+	text-align:center;
+	background: linear-gradient(to bottom, white, #eadce3);
+	height:450px;
+}
+#aboutme h2{
+	padding-top: 20px;
+}
+#aboutme img{
+	margin:0 20px 20px 20px;
+	float:left;
+	border-radius:10%;
+	border:2px solid black;
+	box-shadow:0 0 10px grey;
+}
+#aboutme div{
+	margin:auto;
+	width:70%;
+}
