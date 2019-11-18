@@ -1,0 +1,72 @@
+.jumbotron{
+	height:560px;
+	// background-image: url("assets/images/leftPic.jpg"), url("assets/images/rightPic.jpg");
+	background-size:50% 100%;
+	background-repeat: no-repeat, no-repeat;
+	background-position:left top, right top;
+	text-align:center  !important;
+	margin-bottom:50px;
+}
+
+.jumbotron p{
+	font-size:1.5rem;
+}
+
+#jumbText{
+	width:440px;
+	height:440px;
+	/* background-color:white; */
+	margin:auto;
+	border-radius:50%;
+	// background-image: url("assets/images/myself.jpg");
+	background-repeat: no-repeat;
+	background-size: 440px;
+	box-shadow:0 0 5px grey;
+	display:flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+#profileButton {
+	display: inline-block;
+	background-color: Transparent;
+	border-radius: 20px;
+	border:1px solid grey;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	width: 230px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  #profileButton span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  #profileButton span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  #profileButton:hover{
+	 background-color: #7b38d8;
+  }
+  
+  #profileButton:hover span {
+	padding-right: 25px;
+  }
+  
+  #profileButton:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
