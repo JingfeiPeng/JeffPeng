@@ -96,5 +96,4 @@ export class HeaderComponent implements OnInit {
       inline: 'nearest',
     });
   }
-
 }
