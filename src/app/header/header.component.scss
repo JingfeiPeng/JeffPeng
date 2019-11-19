@@ -1,0 +1,26 @@
+#headerName{
+	display: flex;
+	height: 80px;
+	width: 250px;
+	align-items: center;
+	justify-content: center;
+}
+
+#headerNameText{
+	font-size: 25px;
+    font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.active{
+    color:black;
+}
+
+#filler{
+	opacity: 0;
+}
+
+.fillerHeight{
+	height: 70px;
+	transition: 1s all ease; 
+}
