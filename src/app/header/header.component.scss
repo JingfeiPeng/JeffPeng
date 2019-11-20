@@ -11,6 +11,11 @@
     font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.absolute{
+	position: fixed;
+	z-index: ceil($number: 10);
+	width: 100%;
+}
 
 .active{
     color:black;

@@ -42,6 +42,13 @@ export class HeaderComponent implements OnInit {
     const scrollPosY = window.pageYOffset || document.body.scrollTop;
     const navContainer = document.getElementById('header');
     const filler = document.getElementById('filler');
+    // if (scrollPosY > 0){
+    //   navContainer.classList.add('sticky-top');
+    //   navContainer.classList.remove('absolute');
+    // } else {
+    //   navContainer.classList.remove('sticky-top');
+    //   navContainer.classList.add('absolute');
+    // }
     if (scrollPosY <= 280) {
       navContainer.classList.remove('shrinked');
       filler.classList.remove('fillerHeight');
