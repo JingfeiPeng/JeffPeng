@@ -1,11 +1,14 @@
 .jumbotron{
-	height:560px;
+	height:100vh;
 	background-image: url("../../../assets/images/leftPic.jpg"), url("../../../assets/images/rightPic.jpg");
 	background-size:50% 100%;
 	background-repeat: no-repeat, no-repeat;
 	background-position:left top, right top;
 	text-align:center  !important;
 	margin-bottom:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .jumbotron p{
