@@ -7,6 +7,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  windowHeight: number = window.innerHeight;
   steps = [
     {
       id:"Home",
@@ -25,12 +26,16 @@ export class HeaderComponent implements OnInit {
       label:"Contact"
     }
   ]
+  
   @HostListener('window:scroll', ['$event'])
-
-
   // called when scrolling
   onScroll(ev: any) {
     this.scrollManager();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.windowHeight = window.innerHeight;
   }
 
   constructor() { }
@@ -41,7 +46,9 @@ export class HeaderComponent implements OnInit {
   scrollManager(){
     const scrollPosY = window.pageYOffset || document.body.scrollTop;
     const navContainer = document.getElementById('header');
-    if (scrollPosY <= 280) {
+    const aboutmeContainer = document.getElementById(`AboutMe`) as HTMLElement;
+    const bottomPos = aboutmeContainer.getBoundingClientRect().top;
+    if (scrollPosY <= this.windowHeight - 100) {
       navContainer.classList.remove('shrinked');
     } else {
       navContainer.classList.add('shrinked');
@@ -53,7 +60,7 @@ export class HeaderComponent implements OnInit {
         // get actual target id as html
         const step = document.getElementById(`${steps[i].id}`) as HTMLElement;
         const stepYPosition = step.getBoundingClientRect().top;
-        if (stepYPosition < 200 && stepYPosition > 0) { // within 200 of the height of page
+        if (stepYPosition < 200 && stepYPosition >= 0) { // within 200 of the height of page
           const stepNav = document.getElementById(
             `NAV-${steps[i].id}`
           ) as HTMLElement;

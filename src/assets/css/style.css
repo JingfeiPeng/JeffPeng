@@ -48,10 +48,9 @@ body {
 
 nav.shrinked {
   height: 80px !important;
-  /* background-color: black;
-	color:white; */
   -webkit-transition: 1s all ease;
-  transition: 1s all ease; }
+  transition: 1s all ease; 
+}
 
 nav {
   height: 150px;

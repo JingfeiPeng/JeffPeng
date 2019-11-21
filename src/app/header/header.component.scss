@@ -12,26 +12,49 @@
 }
 
 .active{
-    color:black;
+	border-bottom: 2px solid grey !important;
 }
 
-nav{
-	height:150px;
-	position:relative;
-	opacity:0.8;
-	-webkit-transition:1s all ease;
-	transition:1s all ease;
+.fixed{
 	position: fixed;
 	z-index: ceil($number: 10);
 	width: 100%;
-	.shrinked{
-		height:80px !important;
-		-webkit-transition:1s all ease;
-		transition:1s all ease;
+}
+.navStyle{
+	height:150px;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition:1s all ease;
+	transition:1s all ease;
+	div p{
+		color:white;
+		text-shadow: 2px 2px black;
 	}
-	// div p{
-	// 	color:white;
-	// }
+	.nav-link{
+		color: white;
+		text-shadow: 2px 2px black;
+	}
+	#phone{
+		color: white;
+	}
+}
+
+.shrinked{
+	height:80px !important;
+	background-color: white;
+	opacity: 0.9;
+	-webkit-transition:1s all ease;
+	transition:1s all ease;
+	div p{
+		color:grey;
+		text-shadow: none;
+	}
+	.nav-link{
+		color: grey;
+		text-shadow: none;
+	}
+	#phone{
+		color:grey;
+	}
 }
 
 .navbar-brand{
@@ -53,5 +76,4 @@ nav{
 	&:hover{
 		border-bottom: 3px solid grey;
 	}
-	
 }
