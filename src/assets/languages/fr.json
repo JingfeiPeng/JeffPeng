@@ -7,18 +7,16 @@
         "Resume":"Reprendre"
     },
     "HOME":{
-        "VISIT_GITHUB_PAGE":"Visit Github Page"
+        "VISIT_GITHUB_PAGE":"Visitez la page Github"
     },
     "ABOUT_ME":{
-        "HEADER":"About Me",
-        "DESCRIPTION":"Hi there! My name is Jeffer Peng. I am an experienced software engineer for 3+ years. I am skilled at full stack web development, database management, and Object Oriented programming. I have experiences in ES6 JavaScript, C++, Python, HTML, CSS, React.js, React Native, Node.js, Express.js, MongoDB, Java, PHP, SqlServer. Fluent in English and Mandarin."
+        "HEADER":"À propos de moi",
+        "DESCRIPTION":"Salut! Je m'appelle Jeffer Peng. Je suis un ingénieur logiciel expérimenté depuis plus de 3 ans. Je suis expérimenté dans le développement web full stack, la gestion de base de données et la programmation orientée objet. J'ai des expériences en JavaScript ES6, C ++, Python, HTML, CSS, React.js, Natif React, Node.js, Express.js, MongoDB, Java, PHP, SqlServer. Parle couramment l'anglais et le mandarin."
     },
     "PROJECTS":{
-        "PROJECTS":"Projects"
+        "PROJECTS":"Projets"
     },
     "CONTACT_ME":{
-        "CONTACT_ME":"CONTACT_ME",
-        "NAME":"Jeffer Peng",
-        "EMAI:":"jf2peng@edu.uwaterloo.ca"
+        "CONTACT_ME":"Contactez moi"
     }
 }
