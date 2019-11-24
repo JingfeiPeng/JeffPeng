@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
     {
       title:"This site",
       techs:"Angular & gulp & heroku hosting",
-      description:"This is the codebase for the site you are seeing now",
+      description:"This is the codebase for the site you are seeing now. Available in both English and French",
       githubLink:"https://github.com/JingfeiPeng/JeffPeng",
       pictureLink:"JeffSite.png"
     },
