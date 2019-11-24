@@ -9,6 +9,15 @@ import { ProfileComponent } from './mainpage/profile/profile.component';
 import { AboutMeComponent } from './mainpage/about-me/about-me.component';
 import { ProjectsComponent } from './mainpage/projects/projects.component';
 import { ContactInfoComponent } from './mainpage/contact-info/contact-info.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http,
+    `./assets/languages/`,
+    '.json');
+}
 
 @NgModule({
   declarations: [
@@ -22,7 +31,15 @@ import { ContactInfoComponent } from './mainpage/contact-info/contact-info.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

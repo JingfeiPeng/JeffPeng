@@ -10,10 +10,10 @@
                 <li (click)="goToStep(step.id)"
                     class="nav-item bold">
                     <a class="nav-link" id="NAV-{{ step.id }}" 
-                        [ngClass]="{ 'active': first }" >{{step.label}}</a>
+                        [ngClass]="{ 'active': first }" >{{ "HEADER."+step.id | translate }}</a>
                 </li>
             </ng-container>
-            <li class="nav-item bold"><a class="nav-link">Resume</a>
+            <li class="nav-item bold"><a class="nav-link"> {{ "HEADER.Resume"| translate }} </a>
         </li>
         </ul>
         <div id="phone">
