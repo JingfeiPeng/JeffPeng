@@ -5,38 +5,18 @@
         <hr/>
     </div>
     <div class="row">
-        <div class="col-sm-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.4s">
-            <div class="circle">
-                <div class="circle_title">
-                    <h2 class="projectTitle">Two Players Tetris </h2>
-                    <h3 class="projectLanuage">C++ & Xwindow Graphic</h3>
+        <ng-container *ngFor="let project of projects">
+            <div class="col-sm-4">
+                <div class="circle">
+                    <div class="circle_title">
+                        <h2 class="projectTitle"> {{project.title}} </h2>
+                        <h3 class="projectLanuage">{{project.techs}}</h3>
+                    </div>
+                    <a [href]="project.githubLink"><img [src]="'../../../assets/images/'+project.pictureLink" [alt]="project.pictureLink"/></a>
+                    <div class="content_shadow"></div>
+                    <p class="projectDescription">{{ project.description }}</p>
                 </div>
-                <a href="https://github.com/JingfeiPeng/Biquadris"><img src="../../../assets/images/tetris.jpg" alt="Tetris Picture"/></a>
-                <div class="content_shadow"></div>
-                <p class="projectDescription">A two players tetris game project made using C++. Incorporated observer, factory and MVC design patterns. It also used OOP techniques such as Polymorphism, RAII and single responsibility principle</p>
             </div>
-        </div>
-        <div class="col-sm-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-            <div class="circle">
-                <div class="circle_title">
-                    <h2 class="projectTitle">Energy Station</h2>
-                    <h3 class="projectLanuage"> React Native & Redux</h3>
-                </div>
-                <a href="https://github.com/JingfeiPeng/EnergyStation"><img src="../../../assets/images/energyStation.png" alt="App screenshot"/></a>
-                <div class="content_shadow"></div>
-                <p class="projectDescription">A mobile app build in React Native, featuring user authentication, manipulating to-do list activities, and manage user’s friend list. Consisting of 10+ screens and 20+ react components</p>
-            </div>
-        </div>
-        <div class="col-sm-4 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.4s">
-            <div class="circle">
-                <div class="circle_title">
-                    <h2 class="projectTitle">Energy Station Backend</h2>
-                    <h3 class="projectLanuage"> Node.Js & Express.Js & Mongoose</h3>
-                </div>
-                <a href="https://github.com/JingfeiPeng/EnergyStationBackend"><img src="../../../assets/images/mongodb.jpg" alt="JSON screenShot"/></a>
-                <div class="content_shadow"></div>
-                <p class="projectDescription">Created backend server using Node, Express, Mongoose to handle 10+ REST APIs used in the app. Implemented middleware functions to log errors to text file, authenticate users, and handle exceptions</p>
-            </div>
-        </div>
+        </ng-container>
     </div>
 </div>
