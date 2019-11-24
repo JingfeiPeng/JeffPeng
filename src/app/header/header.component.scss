@@ -11,6 +11,7 @@
     font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+
 .active{
 	border-bottom: 2px solid grey !important;
 }
@@ -36,6 +37,11 @@
 	#phone{
 		color: white;
 	}
+	#languageButton{
+		background-color: rgba(0,0,0,0);
+		color: white;
+		margin-left: 5px;
+	}
 }
 
 .shrinked{
@@ -54,6 +60,11 @@
 	}
 	#phone{
 		color:grey;
+	}
+	#languageButton{
+		background-color: rgba(0,0,0,0);
+		color: black;
+		margin-left: 5px;
 	}
 }
 

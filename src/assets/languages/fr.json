@@ -1,6 +1,9 @@
 {
     "HEADER":{
-        "Home":"AKDLSAJLKDKLS",
-        "About Me":"dsads"
+        "Home":"Maison",
+        "AboutMe":"À propos de moi",
+        "Projects":"Projets",
+        "Contact":"Contact",
+        "Resume":"Reprendre"
     }
 }

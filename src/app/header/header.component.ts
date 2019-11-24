@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import {HeaderSteps} from '../models/HeaderSteps.model'
 
 @Component({
   selector: 'app-header',
@@ -7,8 +9,9 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  language = "Fr"
   windowHeight: number = window.innerHeight;
-  steps = [
+  steps : HeaderSteps[] = [
     {
       id:"Home",
       label:"Home"
@@ -38,7 +41,19 @@ export class HeaderComponent implements OnInit {
     this.windowHeight = window.innerHeight;
   }
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['en', 'fr']);
+    translate.setDefaultLang('en');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en')
+   }
+
+  changeLanguage(){
+    this.language = (this.language === "Fr") ? "En":"Fr";
+    const languageCode = (this.language === "Fr") ? "en":"fr";
+    this.translate.use(`${languageCode}`);
+  }
 
   ngOnInit() {
   }
