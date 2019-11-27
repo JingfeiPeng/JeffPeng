@@ -1,0 +1,14 @@
+#splashScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: white
+    }
+}
