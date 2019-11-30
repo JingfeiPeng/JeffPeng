@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SplashScreenTimerService } from './services/splash-screen-timer.service';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   loadingPage : boolean = true;
-  constructor(){
+  constructor(private timer: SplashScreenTimerService){
   }
 
   ngOnInit(){
     setTimeout(()=>{
       this.loadingPage = false
-    }, 1000)
+    }, this.timer.total)
   }
 }

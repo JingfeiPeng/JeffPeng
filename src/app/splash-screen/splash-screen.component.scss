@@ -6,9 +6,16 @@
     width: 100%;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     p {
         color: white
+    }
+    #textArea{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
