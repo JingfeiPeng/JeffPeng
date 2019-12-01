@@ -1,6 +1,7 @@
 .jumbotron{
 	height:100vh;
 	background: url("../../../assets/images/profiledarkbackground.jpeg") no-repeat;
+	// background: rgb(26, 34, 44);
 	background-size: 100%;
 	background-position:left top, right top;
 	text-align:center  !important;
@@ -17,9 +18,11 @@
 #jumbText{
 	width:440px;
 	height:440px;
+	z-index: 1;
 	margin:auto;
 	border-radius:50%;
 	background-image: url("../../../assets/images/myself.jpg");
+	// background-image: url("../../../assets/images/coolerMyself.jpg");
 	background-repeat: no-repeat;
 	background-size: 440px;
 	box-shadow:0 0 5px grey;

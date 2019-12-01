@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faPhone  } from '@fortawesome/free-solid-svg-icons';
+import {faPhone, faMailBulk  } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,7 +8,8 @@ import {faPhone  } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./contact-info.component.scss']
 })
 export class ContactInfoComponent implements OnInit {
-  faCoffee = faPhone
+  faPhone = faPhone
+  faMailBulk = faMailBulk
   constructor() { }
 
   ngOnInit() {
