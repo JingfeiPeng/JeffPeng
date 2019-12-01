@@ -1,8 +1,26 @@
+$paddingVer: 10vh;
+$imgSpacing: 10px;
+$imgSize: 30px;
+
 #name{
     color:white;
-    text-align: center
 }
 
 #nameLine{
     margin: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: $paddingVer;
+    padding-bottom: $paddingVer;
+    div img{
+        margin-top: 5px;
+        margin-left: $imgSpacing;
+        width: $imgSize;
+        height: $imgSize;
+    }
 }

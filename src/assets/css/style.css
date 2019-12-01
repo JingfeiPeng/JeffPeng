@@ -80,31 +80,7 @@ body {
 
 footer {
   color: white;
-  height: 500px;
-  background-color: #161616;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-footer h2 {
-  padding: 20px;
-  font-family: 'Wendy One', sans-serif; }
-
-footer img {
-  display: inline-block;
-  width: 200px;
-  height: 300px;
-  border-radius: 5%;
-  transition: all 0.5s ease; }
-
-footer img:hover {
-  border-radius: 10%; }
-
-footer div {
-  width: 700px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  background-color: #161616; }
 
 #contact {
   width: 300px;
@@ -204,47 +180,3 @@ footer div {
   transition: all 0.3s;
   z-index: 0;
   margin: 0 auto; }
-
-@media (max-width: 600px) {
-  #aboutme {
-    height: unset; }
-  nav.shrinked {
-    height: auto !important; }
-  nav {
-    height: auto;
-    opacity: 0.9; }
-  .navbar-brand {
-    margin-left: 0; }
-  .navbar-brand img {
-    width: 80px;
-    height: 80px; }
-  .jumbotron {
-    height: 450px; }
-  #jumbText {
-    margin-top: 40px;
-    height: 330px;
-    width: 75%; }
-  #jumbText h3 {
-    font-size: 1rem; }
-  #jumbText p {
-    font-size: 1rem; }
-  li {
-    display: inline; }
-  #staff {
-    height: 750px; }
-  #staff img {
-    height: 150px; }
-  #staff div {
-    width: 100%; }
-  footer div {
-    width: 95%;
-    margin: auto; }
-  footer img {
-    width: 140px;
-    height: 180px; }
-  #contact {
-    width: 50%;
-    margin-left: 20px;
-    display: inline-block; }
-  footer {
-    height: 400px; } }

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule}  from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

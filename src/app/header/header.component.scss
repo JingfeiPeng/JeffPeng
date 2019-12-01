@@ -11,7 +11,6 @@
     font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
 .active{
 	border-bottom: 2px solid grey !important;
 }
@@ -86,5 +85,16 @@
 	font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 	&:hover{
 		border-bottom: 3px solid grey;
+	}
+}
+
+
+@media only screen and (max-width:600px){
+	#header{
+		display: flex;
+		justify-content: center
+	}
+	#headerName{
+		width: unset;
 	}
 }
