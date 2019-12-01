@@ -27,4 +27,12 @@ footer{
         width: $imgSize;
         height: $imgSize;
     }
+    #contactInfoList{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    fa-icon{
+        margin-left: 10px;
+    }
 }

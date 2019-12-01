@@ -44,6 +44,7 @@ body {
   box-shadow: 0 0 5px grey; }
 
 #services {
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 30px; }
 

@@ -8,16 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileComponent implements OnInit {
   myStyle: object = {};
   myParams: object = {};
-  width: number = 100;
-  height: number = 100;
   constructor() { }
 
   ngOnInit() {
     this.myStyle = {
-      'position': 'fixed',
-      'width': '100%',
-      'height': '100%',
+      'position': 'absolute',
+      "width":"100vw",
       'z-index': 0,
+      'height':"100vh",
       'top': 0,
       'left': 0,
       'right': 0,
