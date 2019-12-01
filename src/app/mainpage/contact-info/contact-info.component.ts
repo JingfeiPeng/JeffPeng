@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import {faPhone  } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./contact-info.component.scss']
 })
 export class ContactInfoComponent implements OnInit {
-  faCoffee = faLink
+  faCoffee = faPhone
   constructor() { }
 
   ngOnInit() {
