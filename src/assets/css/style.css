@@ -2,33 +2,11 @@ body {
   position: relative;
   font-family: 'Open Sans', sans-serif; }
 
-.navbar-brand {
-  margin-left: 30px;
-  opacity: 1; }
-
-.navbar-brand img {
-  width: 120px;
-  height: 120px; }
-
-#phone {
-  display: inline-block;
-  margin-right: 30px; }
-
-.nav-link {
-  border-bottom: 3px solid transparent;
-  font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif; }
-
-.nav-link:hover {
-  border-bottom: 3px solid grey; }
-
 .bold {
   font-weight: bold; }
 
 #text {
   font-size: 20px; }
-
-.jumbotron p {
-  font-size: 1.5rem; }
 
 #project {
   text-align: center; }
@@ -45,19 +23,6 @@ body {
 
 #githubLink {
   font-weight: bold; }
-
-nav.shrinked {
-  height: 80px !important;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease; 
-}
-
-nav {
-  height: 150px;
-  position: relative;
-  opacity: 0.8;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease; }
 
 .container h2 {
   color: #9D9D9D;
