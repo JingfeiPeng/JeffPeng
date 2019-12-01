@@ -205,7 +205,9 @@ footer div {
   z-index: 0;
   margin: 0 auto; }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  #aboutme {
+    height: unset; }
   nav.shrinked {
     height: auto !important; }
   nav {

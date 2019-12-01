@@ -1,5 +1,4 @@
 .aboutMe{
-    height:100vh;
     background: linear-gradient(to bottom, white, #eadce3);
 }
 
@@ -26,4 +25,10 @@
 #aboutme div{
 	margin:auto;
 	width:70%;
+}
+
+@media only screen and (max-width:600px){
+	#aboutme{
+		height: unset;
+	}
 }
