@@ -13,7 +13,6 @@ export class ParticleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.topPos)
     this.myStyle = {
       'position': 'absolute',
       "width":"100vw",
