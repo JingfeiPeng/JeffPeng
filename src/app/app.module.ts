@@ -16,7 +16,6 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
-import { ParticleScreenComponent } from './particle/particle-screen/particle-screen.component';
 import { ParticleComponent } from './particle/particle.component';
 
 export function createTranslateLoader(http: HttpClient) {
