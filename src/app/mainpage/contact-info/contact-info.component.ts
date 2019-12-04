@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faPhone, faMailBulk  } from '@fortawesome/free-solid-svg-icons';
+import {faPhone, faMailBulk, faEnvelope  } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -10,6 +10,7 @@ import {faPhone, faMailBulk  } from '@fortawesome/free-solid-svg-icons';
 export class ContactInfoComponent implements OnInit {
   faPhone = faPhone
   faMailBulk = faMailBulk
+  faEnvelope = faEnvelope
   topPos : number;
   constructor() { }
 
