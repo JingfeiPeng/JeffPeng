@@ -25,6 +25,33 @@ $sec: rgb(141, 161, 187);
 	}
 }
 
+.introTitle{
+	font-size: 50px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+    @media only screen and (min-width:600){
+      font-size: 40px;
+    }
+}
+
+.intro {
+	font-size: 40px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+    @media only screen and (min-width:600){
+      font-size: 40px;
+    }
+}
+
+.descriptionText{
+	margin-top: 6vh;
+	margin-bottom: 40px;
+}
+
 .bounce {
 	display: inline-block;
 	position: relative;
@@ -69,20 +96,15 @@ $sec: rgb(141, 161, 187);
 }
 
 #jumbText{
-	width:440px;
-	height:440px;
+	margin-top: 20vh;
+	width:15vw;
+	height:15vw;
 	z-index: 1;
-	margin:auto;
 	border-radius:50%;
-	background-image: url("../../../assets/images/myself.jpg");
-	// background-image: url("../../../assets/images/coolerMyself.jpg");
+	background-image: url("../../../assets/images/coolerMyself.jpg");
 	background-repeat: no-repeat;
-	background-size: 440px;
+	background-size: 100%;
 	box-shadow:0 0 5px grey;
-	display:flex;
-	align-items: flex-end;
-	justify-content: center;
-	padding-bottom: 40px;
 }
 
 #profileButton {
