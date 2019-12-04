@@ -31,9 +31,7 @@ $sec: rgb(141, 161, 187);
     line-height: 1;
     color: #FFF;
     margin-top: 10px;
-    @media only screen and (min-width:600){
-      font-size: 40px;
-    }
+
 }
 
 .intro {
@@ -42,9 +40,6 @@ $sec: rgb(141, 161, 187);
     line-height: 1;
     color: #FFF;
     margin-top: 10px;
-    @media only screen and (min-width:600){
-      font-size: 40px;
-    }
 }
 
 .descriptionText{
@@ -149,5 +144,15 @@ $sec: rgb(141, 161, 187);
 @media only screen and (max-width:600px){
 	.jumbotron{
 		background: black;
+	}
+	#jumbText{
+		width:150px;
+		height:150px;
+	}
+	.introTitle{
+		font-size: 30px;
+	}
+	.intro {
+		font-size: 20px;
 	}
 }
