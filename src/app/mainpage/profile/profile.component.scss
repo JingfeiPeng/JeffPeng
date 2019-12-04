@@ -1,3 +1,5 @@
+$sec: rgb(141, 161, 187);
+
 .jumbotron{
 	height:100vh;
 	background: url("../../../assets/images/profiledarkbackground.jpeg") no-repeat;
@@ -7,8 +9,59 @@
 	text-align:center  !important;
 	margin-bottom:50px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	span{
+		z-index: 1;
+	}
+	.downArrow {
+		color:white; 
+		font-size:2rem;
+		cursor: pointer;
+		&:hover{
+			color: $sec
+		}
+	}
+}
+
+.bounce {
+	display: inline-block;
+	position: relative;
+	-moz-animation: bounce 0.5s infinite linear;
+	-o-animation: bounce 0.5s infinite linear;
+	-webkit-animation: bounce 0.5s infinite linear;
+	animation: bounce 0.5s infinite linear;
+}
+@-webkit-keyframes bounce {
+	0% { top: 0; }
+	50% { top: -0.2em; }
+	70% { top: -0.3em; }
+	100% { top: 0; }
+}
+@-moz-keyframes bounce {
+	0% { top: 0; }
+	50% { top: -0.2em; }
+	70% { top: -0.3em; }
+	100% { top: 0; }
+}
+@-o-keyframes bounce {
+	0% { top: 0; }
+	50% { top: -0.2em; }
+	70% { top: -0.3em; }
+	100% { top: 0; }
+}
+@-ms-keyframes bounce {
+	0% { top: 0; }
+	50% { top: -0.2em; }
+	70% { top: -0.3em; }
+	100% { top: 0; }
+}
+@keyframes bounce {
+	0% { top: 0; }
+	50% { top: -0.2em; }
+	70% { top: -0.3em; }
+	100% { top: 0; }
 }
 
 .jumbotron p{

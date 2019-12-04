@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faChevronDown  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-profile',
@@ -7,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  downArrow = faChevronDown
+
   constructor() { }
 
   ngOnInit() {
     
+  }
+
+  startViewing(){
+    console.log("hit")
+    let aboutMe = document.getElementById("AboutMe");
+    aboutMe.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   }
 
 }
