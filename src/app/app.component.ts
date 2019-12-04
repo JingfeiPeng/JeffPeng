@@ -7,7 +7,9 @@ import { SplashScreenTimerService } from './services/splash-screen-timer.service
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
   loadingPage : boolean;
+  
   constructor(private timer: SplashScreenTimerService){
     this.loadingPage = true;
     let visited = localStorage.getItem("visited");
