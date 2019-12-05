@@ -19,6 +19,8 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { ParticleComponent } from './particle/particle.component';
 import { PrimengModule } from './primeng/primeng.module';
 import { InfoModalComponent } from './modals/info-modal/info-modal.component';
+import { ToolsListComponent } from './mainpage/tools-list/tools-list.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -40,10 +42,12 @@ export function createTranslateLoader(http: HttpClient) {
     ContactInfoComponent,
     SplashScreenComponent,
     ParticleComponent,
-    InfoModalComponent
+    InfoModalComponent,
+    ToolsListComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
