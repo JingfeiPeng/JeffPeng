@@ -1,0 +1,20 @@
+<div id="ToolsList">
+    <h3>Techs that I have used</h3>
+    <div class="chooseTechType">
+        <a [ngStyle]="styleType(TechStacks.frontEnd)" (click)="highlight(TechStacks.frontEnd)" >Front End</a>
+        <a [ngStyle]="styleType(TechStacks.backEnd)" (click)="highlight(TechStacks.backEnd)" >Back End</a>
+        <a [ngStyle]="styleType(TechStacks.others)" (click)="highlight(TechStacks.others)"  >Others</a>
+    </div>
+    <div>
+        <ng-container *ngFor="let category of techOrders">
+            <div class="techStack" 
+                [class.inactive]="activeTech !== category" 
+                [class.active]="activeTech === category"
+                [id]="category">
+                <ng-container *ngFor="let tech of techs[category]; let last = last" >
+                    <span> {{tech}} </span>
+                </ng-container>
+            </div>
+        </ng-container>
+    </div>
+</div>
