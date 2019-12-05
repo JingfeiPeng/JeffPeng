@@ -11,7 +11,7 @@
     },
     "ABOUT_ME":{
         "HEADER":"About Me",
-        "DESCRIPTION":"Hi there! My name is Jeffer Peng. I am an experienced software engineer for 3+ years. I am skilled at full stack web development, database management, and Object Oriented programming. I have experiences in ES6 JavaScript, C++, Python, HTML, CSS, React.js, React Native, Node.js, Express.js, MongoDB, Java, PHP, SqlServer. Fluent in English and Mandarin."
+        "DESCRIPTION":"Hi there! My name is Jeffer Peng. I am currently an undergrad student majoring in Computer Science at University of Waterloo. I have experiences in full stack development, algorithms and data structures, database management, and Object Oriented programming. I am fluent in English and Mandarin."
     },
     "PROJECTS":{
         "PROJECTS":"Projects"
