@@ -21,6 +21,7 @@ import { PrimengModule } from './primeng/primeng.module';
 import { InfoModalComponent } from './modals/info-modal/info-modal.component';
 import { ToolsListComponent } from './mainpage/tools-list/tools-list.component';
 import { CommonModule } from '@angular/common';
+import { SpecificDetailComponent } from './mainpage/projects/specific-detail/specific-detail.component';
 
 
 
@@ -43,7 +44,8 @@ export function createTranslateLoader(http: HttpClient) {
     SplashScreenComponent,
     ParticleComponent,
     InfoModalComponent,
-    ToolsListComponent
+    ToolsListComponent,
+    SpecificDetailComponent
   ],
   imports: [
     BrowserModule,

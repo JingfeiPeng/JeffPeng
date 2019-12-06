@@ -1,0 +1,22 @@
+#content{
+    width: 60vw;
+    height: 60vh;
+}
+p-footer{
+    button{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#shadow{
+    z-index: 99;
+    background: rgb(156, 151, 151);
+    opacity: 0.6;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+

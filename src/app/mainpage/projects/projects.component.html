@@ -1,3 +1,8 @@
+<app-specific-detail 
+    [displayProjectDetail]="displayProjectDetail" 
+    [projectDetail]="projectDetail" 
+    (closeDetails)="closeDetail()">
+</app-specific-detail>
 <div id="services" class="container">
     <div id="project">
         <h2>{{ "PROJECTS.PROJECTS" | translate }}</h2>
@@ -5,14 +10,14 @@
         <hr/>
     </div>
     <div class="row">
-        <ng-container *ngFor="let project of projects">
+        <ng-container *ngFor="let project of projects; let index=index">
             <div class="col-sm-4">
-                <div class="circle">
+                <div class="circle" (click)="showDetail(index)">
                     <div class="circle_title">
                         <h2 class="projectTitle"> {{project.title}} </h2>
                         <h3 class="projectLanuage">{{project.techs}}</h3>
                     </div>
-                    <a [href]="project.githubLink"><img [src]="'../../../assets/images/'+project.pictureLink" [alt]="project.pictureLink"/></a>
+                    <a ><img [src]="'../../../assets/images/'+project.pictureLink" [alt]="project.pictureLink"/></a>
                     <div class="content_shadow"></div>
                     <p class="projectDescription">{{ project.description }}</p>
                 </div>
@@ -20,3 +25,4 @@
         </ng-container>
     </div>
 </div>
+

@@ -1,0 +1,16 @@
+<div *ngIf="display" id="shadow">
+</div>
+
+<p-dialog [(visible)]="display">
+    <p-header>
+        {{projectDetail?.title}}
+    </p-header>
+    <div id="content">
+
+    </div>
+    <p-footer>
+        <button pButton class="ui-button-success" type="button" label="Close"
+            (click)="toggleDialog()" icon="pi pi-check" [iconPos]="'left'"></button>
+    </p-footer>
+</p-dialog>
+
