@@ -52,7 +52,19 @@ export const projectData : ProjectInfo[] = [
       githubLink:"https://github.com/JingfeiPeng/Conquerer-2D-game",
       pictureLink:"conqueror.jpg",
       techsUsedList:["Python","Pygame", "Factory design pattern"],
-      picturesList:["conqueror.jpg"],
+      picturesList:[
+        "conquerorInto.png", 
+        "conqueror.jpg",
+        "gameFight.png",
+        "Conquerorgamefight2.png", 
+        "ConquerorDeathScreen.png",
+        "conquerorLabratory.png", 
+        "COnquerorGameGuide.png",
+        "ConquerorGameGuide2.png",
+        "ConquerorNorthAmerica.png",
+        "conquerorSovietUnion.png",
+        "conquerorViewStatus.png"
+      ],
       additionalInfo:[
           "a 2D MMO game to conqueror the planet",
           ""

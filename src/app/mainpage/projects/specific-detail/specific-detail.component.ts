@@ -25,8 +25,8 @@ export class SpecificDetailComponent implements OnInit, OnChanges {
       for (let picture of this.projectDetail.picturesList){
         let newImage = {
           source:`../../../assets/images/${picture}`,
-          alt:'Live screenshots',
-          title: ""
+          alt:'Hey',
+          title: "yo"
         }
         newImages.push(newImage)
       }
