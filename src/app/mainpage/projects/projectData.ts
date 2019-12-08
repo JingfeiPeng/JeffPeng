@@ -6,9 +6,9 @@ export const projectData : ProjectInfo[] = [
       techs:"C++ & Xwindow Graphic",
       description:"A two players tetris game project made using C++. Incorporated observer, factory and MVC design patterns. It also used OOP techniques such as Polymorphism, RAII and single responsibility principle",
       githubLink:"https://github.com/JingfeiPeng/Biquadris",
-      pictureLink:"tetris.jpg",
+      pictureLink:"graphical.png",
       techsUsedList:["C++","Xwindow Graphic", "Observer Design Pattern" ,"MVC design pattern"],
-      picturesList:["tetris.jpg"],
+      picturesList:["graphical.png", "graphical2.png","textbasedScreen2.png", "textbasedScreenshot.png"],
       additionalInfo:[
           "A fun 1vs1 competitive Tetris Game", 
           "",
@@ -50,7 +50,7 @@ export const projectData : ProjectInfo[] = [
       techs: "Python & Pygame",
       description:"A 2D MMO game where player can play 4 levels, shoot and kill enemies to get gold and upgrade stats, and save game progress.",
       githubLink:"https://github.com/JingfeiPeng/Conquerer-2D-game",
-      pictureLink:"conqueror.jpg",
+      pictureLink:"conquerorInto.png",
       techsUsedList:["Python","Pygame", "Factory design pattern"],
       picturesList:[
         "conquerorInto.png", 
@@ -67,7 +67,10 @@ export const projectData : ProjectInfo[] = [
       ],
       additionalInfo:[
           "a 2D MMO game to conqueror the planet",
-          ""
+          "Player can control a character on a map to shoot at enemy soldiers and tanks",
+          "Destroying enemy soldiers and tanks can earn golds which allows player to purchase weapons in labratory. Items can be used to upgrade health, attack or mobility",
+          "game progress can be saved and loaded agin in menu",
+          "This game was built in high school as the grade 11 Computer Science course's final project"
         ]
     },
     {
