@@ -12,7 +12,7 @@ export const projectData : ProjectInfo[] = [
       additionalInfo:[
           "A fun 1vs1 competitive Tetris Game", 
           "",
-          "with 4 levels and hidden triggers to sabotage the opponent"
+          "The game contains 4 difficulty levels and hidden triggers to sabotage the opponent"
         ]
     },
     {
