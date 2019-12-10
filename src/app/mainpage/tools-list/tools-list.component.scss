@@ -6,11 +6,14 @@ $responsiveWidth:95vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media only screen and (max-width:600px){
-        margin-top: 5vh;
-    }
     h3 {
         font-size: 1.8rem;
+    }
+    @media only screen and (max-width:600px){
+        margin-top: 5vh;
+        h3 {
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -24,6 +27,9 @@ $responsiveWidth:95vw;
     }
     @media only screen and (max-width:600px){
         width: $responsiveWidth;
+        span {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -40,6 +46,10 @@ $responsiveWidth:95vw;
     }
     @media only screen and (max-width:600px){
         width: $responsiveWidth;
+        a {
+            margin-right:1em;
+            font-size: 1rem;
+        }
     }
 }
 
