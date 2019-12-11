@@ -16,7 +16,7 @@ export class ToolsListComponent implements OnInit {
   techOrders = [TechStacks.frontEnd, TechStacks.backEnd, TechStacks.others]
   techs = {
     [TechStacks.frontEnd]: ["React", "React Native", "Redux",  "Angular", "Rxjx", "NgRx", "Electron", "Javascript/Typescript",
-    "HTML", "CSS", "SCSS", "Gulp", "Apollo", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg"],
+    "HTML", "CSS", "SCSS", "Gulp", "Apollo", "gql", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg"],
     [TechStacks.backEnd]: ["Node", "Express","GraphQL", "Socket.io","Java", "Spring Boot", "PHP", "MongoDB", "Mongoose", "mlab", "SQL"],
     [TechStacks.others] :["C", "C++", "Python", "PyGame", "Tensorflow", "Numpy", "docker", "Git", "SVN", "Linux", "Bash","Vim", "UML", "Heroku"]
   }

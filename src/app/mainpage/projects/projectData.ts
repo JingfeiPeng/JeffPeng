@@ -4,21 +4,21 @@ export const projectData : ProjectInfo[] = [
     {
       title:"Two Players Tetris",
       techs:"C++ & Xwindow Graphic",
-      description:"A two players tetris game project made using C++. Incorporated observer, factory and MVC design patterns. It also used OOP techniques such as Polymorphism, RAII and single responsibility principle",
+      description:"A two players competitive tetris game project made using C++ and Xwindow.",
       githubLink:"https://github.com/JingfeiPeng/Biquadris",
       pictureLink:"graphical.png",
       techsUsedList:["C++","Xwindow Graphic", "Observer Design Pattern" ,"MVC design pattern"],
       picturesList:["graphical.png", "graphical2.png","textbasedScreen2.png", "textbasedScreenshot.png"],
       additionalInfo:[
           "A fun 1vs1 competitive Tetris Game", 
-          "",
+          "Incorporated observer, factory and MVC design patterns. It also used OOP techniques such as Polymorphism, RAII and single responsibility principle",
           "The game contains 4 difficulty levels and hidden triggers to sabotage the opponent"
         ]
     },
     {
       title:"Energy Station",
       techs:"React Native & Redux",
-      description:"A mobile app build in React Native, featuring user authentication, manipulating to-do list activities, and manage user’s friend list. Consisting of 10+ screens and 20+ react components",
+      description:"A mobile app build in React Native, featuring user authentication, manipulating to-do list activities, and manage user’s friend list.",
       githubLink:"https://github.com/JingfeiPeng/EnergyStation",
       pictureLink:"energyStation.png",
       techsUsedList:["React Native", "Redux"],
@@ -95,5 +95,25 @@ export const projectData : ProjectInfo[] = [
       techsUsedList:["React", "Node","Express", "Socket.io"],
       picturesList:["chatApp.png","JeffSite.png"],
       additionalInfo:["A Real Time Chat Application"]
-    }
+    },
+    {
+      title:"Object Model Mapper",
+      techs:"React & Electron & Express",
+      description:"A Proof of Concept project to revolutionize the way BSAs do model mappings",
+      githubLink:"",
+      pictureLink:"OMGWorkbench.png",
+      techsUsedList:["React", "Joint.Js", "PrimeReact", "Electron", "Node", "Express", "MongoDB", "Docker"],
+      picturesList:["OMGWorkbench.png", "workbenchMappingsummary.png", "workbenchAddMapping.png", "mapperScreen.png"],
+      additionalInfo:["A New Revolutional way to do Object Model Mapping", "Note: I have been authorized to display the images and description of this ongoing POC project. However, I am not authorized to share the source codes. Thus the github link has no code contents"]
+    },
+    {
+      title:"Recipe Builder",
+      techs:"React & GraphQL & MongoDB & React Native",
+      description:"A tool to help average guys to remember cooking recipes",
+      githubLink:"",
+      pictureLink:"underConstruction.png",
+      techsUsedList:["React", "React Native", "Apollo", "GraphQL", "Node", "Express", "MongoDB","mlab"],
+      picturesList:["In Construction"],
+      additionalInfo:["A tool to help average guys to remember cooking recipes"]
+    },
   ]
