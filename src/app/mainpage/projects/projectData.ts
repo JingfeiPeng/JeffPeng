@@ -108,7 +108,7 @@ export const projectData : ProjectInfo[] = [
     },
     {
       title:"Recipe Builder",
-      techs:"React & GraphQL & MongoDB & React Native",
+      techs:"React & GraphQL & MongoDB",
       description:"A tool to help average guys to remember cooking recipes",
       githubLink:"",
       pictureLink:"underConstruction.png",

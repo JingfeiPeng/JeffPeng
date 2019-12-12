@@ -4,7 +4,8 @@
     display: flex;
     // background: rgb(183, 187, 211);
     @media only screen and (max-width:600px){
-        width: 100vw;
+        width: 90vw;
+        flex-direction: column;
     }
 }
 #detail-description{
