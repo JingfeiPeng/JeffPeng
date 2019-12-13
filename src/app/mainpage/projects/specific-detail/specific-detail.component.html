@@ -11,17 +11,6 @@
         <span>{{projectDetail?.title}}</span>
     </p-header>
     <div id="content">
-        <div>
-            <!-- gallary -->
-            <p-galleria [images]="images" 
-                panelWidth="400"
-                panelHeight="300"
-                [autoPlay]="false"
-                [transitionInterval]="5000"
-                [showCaption]="false"
-            >
-            </p-galleria>
-        </div>
         <div id="detail-description" >
             <h3 class="DetailTitle">{{projectDetail?.title}}<br> <span> - {{projectDetail?.additionalInfo[0]}}</span></h3>
             <div class="techsSection">
@@ -35,6 +24,17 @@
                     <p class="detail-additionalInfo" *ngIf="index > 0" >{{info}}</p>
                 </div>
             </ng-container>
+        </div>
+        <div>
+            <!-- gallary -->
+            <p-galleria [images]="images" 
+                [panelWidth]="galleriaWidth"
+                [panelHeight]="galleriaHeight"
+                [autoPlay]="false"
+                [transitionInterval]="5000"
+                [showCaption]="false"
+            >
+            </p-galleria>
         </div>
     </div>
     <p-footer>

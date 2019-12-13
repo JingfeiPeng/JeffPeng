@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation, OnChanges, HostListener } from '@angular/core';
 import { ProjectInfo } from 'src/app/models';
 
 @Component({
@@ -13,10 +13,34 @@ export class SpecificDetailComponent implements OnInit, OnChanges {
   @Output("closeDetails") closeDetails = new EventEmitter<boolean>()
   @Input("projectDetail") projectDetail : ProjectInfo = <ProjectInfo>{}; 
   images: any[] = [];
+  windowSize: number;
+  galleriaWidth : number = 400; 
+  galleriaHeight : number  = 300;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.windowSize = window.innerWidth;
+    this.updateGalleriaSize()
+  }
 
   constructor() { }
 
+
+  updateGalleriaSize(){
+    console.log(this.windowSize)
+    if (this.windowSize <= 600){
+      this.galleriaWidth = 330;
+      this.galleriaHeight = 210;
+    } else {
+      this.galleriaWidth = 400; 
+      this.galleriaHeight  = 300;
+    }
+    console.log(this.galleriaWidth)
+  }
+
   ngOnInit() {
+    this.windowSize = window.innerWidth;
+    this.updateGalleriaSize()
   }
 
   ngOnChanges(){

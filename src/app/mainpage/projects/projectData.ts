@@ -103,17 +103,19 @@ export const projectData : ProjectInfo[] = [
       githubLink:"",
       pictureLink:"OMGWorkbench.png",
       techsUsedList:["React", "Joint.Js", "PrimeReact", "Electron", "Node", "Express", "MongoDB", "Docker"],
-      picturesList:["OMGWorkbench.png", "workbenchMappingsummary.png", "workbenchAddMapping.png", "mapperScreen.png"],
-      additionalInfo:["A New Revolutional way to do Object Model Mapping", "Note: I have been authorized to display the images and description of this ongoing POC project. However, I am not authorized to share the source codes. Thus the github link has no code contents"]
+      picturesList:["OMGWorkbench.png", "workbenchMappingsummary.png", "workbenchAddMapping.png", "mapperScreen.png", "OMGSelectWorkSpace.png"],
+      additionalInfo:["A New Revolutional way to do Object Model Mapping", 
+        "The app is built using React, uses an express server, and both the frontend and backend are wrapped in electron to be a standalone desktop app. The node server is wrapped as a dependency in react app",
+        "Note: I have been authorized to display the images and description of this ongoing POC project. However, I am not authorized to share the source codes. Thus the github link has no code contents"]
     },
     {
       title:"Recipe Builder",
       techs:"React & GraphQL & MongoDB",
-      description:"A tool to help average guys to remember cooking recipes",
+      description:"A tool to help average guys/girls to remember cooking recipes",
       githubLink:"",
       pictureLink:"underConstruction.png",
       techsUsedList:["React", "React Native", "Apollo", "GraphQL", "Node", "Express", "MongoDB","mlab"],
-      picturesList:["In Construction"],
+      picturesList:["underConstruction.png"],
       additionalInfo:["A tool to help average guys to remember cooking recipes"]
     },
   ]
