@@ -27,7 +27,6 @@ export class SpecificDetailComponent implements OnInit, OnChanges {
 
 
   updateGalleriaSize(){
-    console.log(this.windowSize)
     if (this.windowSize <= 600){
       this.galleriaWidth = 330;
       this.galleriaHeight = 210;
@@ -35,7 +34,6 @@ export class SpecificDetailComponent implements OnInit, OnChanges {
       this.galleriaWidth = 400; 
       this.galleriaHeight  = 300;
     }
-    console.log(this.galleriaWidth)
   }
 
   ngOnInit() {
