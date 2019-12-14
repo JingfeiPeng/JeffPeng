@@ -1,4 +1,6 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, AfterViewInit } from '@angular/core';
+
+const headerHeight = 80;
 
 @Component({
   selector: 'app-scroll-screen-animation',
@@ -10,7 +12,9 @@ export class ScrollScreenAnimationComponent implements OnInit {
   imageWidth: number  = 150;
   imageheight : number = 120;
   screenWidth : number =window.innerWidth;
-
+  picturesList : string[] = ["code3.jpg",'code1.png',"code2.jpeg", "code4.png", "code5.png", "code6.png", "code7.png", "code8.png"]
+  picturesListTop: number = 1711.625;
+  picturesToShow: number = this.picturesList.length;
   constructor(public el: ElementRef) { }
 
   ngOnInit() {
@@ -21,7 +25,7 @@ export class ScrollScreenAnimationComponent implements OnInit {
     const height = window.innerHeight;
     const width = window.innerWidth + this.imageWidth;
     // get the position when screen scrow pos > element.top
-    const componentPosition = this.el.nativeElement.offsetTop - height-80;
+    const componentPosition = this.el.nativeElement.offsetTop - height-headerHeight;
     const scrollPosition = window.pageYOffset;
     let diff = scrollPosition - (componentPosition + this.imageheight);
     if (diff >= this.imageheight && diff < height){

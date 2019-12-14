@@ -1,8 +1,18 @@
 .objectContainer{
+    position: relative;
     width: 100vw;
+    overflow: hidden;
+    margin-top: 2vh;
 }
 
 #animationObject{
-    position: relative;
+    position: absolute;
+    top:0px;
     transition: all 3s;
+    z-index: 1;
+    background: white;
+}
+
+.picturesList{
+    z-index: -1;
 }

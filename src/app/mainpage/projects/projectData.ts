@@ -69,7 +69,7 @@ export const projectData : ProjectInfo[] = [
           "a 2D MMO game to conqueror the planet",
           "Player can control a character on a map to shoot at enemy soldiers and tanks",
           "Destroying enemy soldiers and tanks can earn golds which allows player to purchase weapons in labratory. Items can be used to upgrade health, attack or mobility",
-          "game progress can be saved and loaded agin in menu",
+          "Game progress can be saved and loaded again in menu",
           "This game was built in high school as the grade 11 Computer Science course's final project"
         ]
     },
