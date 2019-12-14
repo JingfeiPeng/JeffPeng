@@ -16,7 +16,7 @@ export class ScrollScreenAnimationComponent implements OnInit {
   ngOnInit() {
   }
 
-  @HostListener('window:scroll',['$event'])
+  @HostListener('window:scroll',[])
   animateObject(){
     const height = window.innerHeight;
     const width = window.innerWidth + this.imageWidth;
