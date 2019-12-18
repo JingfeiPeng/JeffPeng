@@ -1,0 +1,12 @@
+<div class="objectContainer" id="scrollScreenAnimation" [style.height]='imageheight+"px"'>
+    <div id="animationObject" [style.left]="posX+'px'"
+    [style.width]="screenWidth-posX+'px'"
+    >
+        <img src="../../../assets/images/train.jpg" [width]="imageWidth" [height]="imageheight" alt="train"/>
+    </div>
+    <div class="picturesList">
+        <ng-container *ngFor="let pic of picturesList; let index = index" >
+            <img [id]="'animationPic'+index" [src]="'../../../assets/images/'+pic" [height]="imageheight" alt="pic"/>
+        </ng-container>
+    </div>
+</div>

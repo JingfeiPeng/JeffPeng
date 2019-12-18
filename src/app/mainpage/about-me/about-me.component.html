@@ -1,9 +1,16 @@
 <div class="aboutMe" id="aboutme">
-    <div>
-        <img height="300" src="../../../assets/images/myPicture.png" style="vertical-align:middle"/>
-    </div>
-    <div id="text">
+    <div class="aboutMeTitle">
         <h2>{{ "ABOUT_ME.HEADER" | translate }}</h2>
-        {{ "ABOUT_ME.DESCRIPTION" | translate }}
+    </div>
+    <div class="aboutMeContent">
+        <img height="300" src="../../../assets/images/myPicture.png" style="vertical-align:middle"/>
+        <div>
+            <div class="text">
+                {{ "ABOUT_ME.DESCRIPTION" | translate }}
+            </div>
+            <div class="text">
+                {{ 'ABOUT_ME.EXPERIENCES_DESCRIPTION' | translate }}
+            </div>
+        </div>
     </div>
 </div>

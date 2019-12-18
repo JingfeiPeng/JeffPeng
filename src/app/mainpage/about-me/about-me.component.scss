@@ -1,15 +1,20 @@
 
-#text{
-	font-size: 20px;
+.text{
+	font-size: 1.3rem;
+	padding-bottom: 2vh;
 }
 
 #aboutme{
-	padding-top:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	text-align:center;
 	// background: linear-gradient(to bottom, white, #eadce3);
 	// background: linear-gradient(to bottom, white, #eadce3);
 
-	height:450px;
+	height:60vh;
+	width: 100vw;
 	h2{
 		padding-top: 20px;
 	}
@@ -20,9 +25,12 @@
 		border:2px solid black;
 		box-shadow:0 0 10px grey;
 	}
-	div{
-		margin:auto;
-		width:70%;
+	.aboutMeContent{
+		width: 70vw;
+
+	}
+	.aboutMeTitle{
+		padding-bottom: 3vh;
 	}
 }
 
@@ -30,8 +38,8 @@
 	#aboutme{
 		height: unset;
 	}
-	#text{
-		font-size: 15px;
+	.text{
+		font-size: 1rem;
 		padding-bottom: 10px;
 	}
 }

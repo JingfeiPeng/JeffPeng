@@ -1,10 +1,20 @@
 $width: 60vw;
+$responsiveWidth:95vw;
 
 #ToolsList{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h3 {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width:600px){
+        margin-top: 5vh;
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
 }
 
 .techStack{
@@ -13,7 +23,13 @@ $width: 60vw;
     span {
         padding-right: 2vw;
         line-height: 2;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    @media only screen and (max-width:600px){
+        width: $responsiveWidth;
+        span {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -26,7 +42,14 @@ $width: 60vw;
     border-bottom: 1px solid rgb(179, 175, 175);
     a {
         margin-right:1em;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+    @media only screen and (max-width:600px){
+        width: $responsiveWidth;
+        a {
+            margin-right:1em;
+            font-size: 1rem;
+        }
     }
 }
 

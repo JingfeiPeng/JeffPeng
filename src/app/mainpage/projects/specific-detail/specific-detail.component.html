@@ -1,0 +1,48 @@
+<div *ngIf="display" id="shadow" (click)="toggleDialog()">
+</div>
+
+<p-dialog 
+    [(visible)]="display" 
+    [responsive]="true" 
+    (onHide)="toggleDialog()" 
+    [styleClass]="'dialogClass'"
+>
+    <p-header>
+        <span>{{projectDetail?.title}}</span>
+    </p-header>
+    <div id="content">
+        <div id="detail-description" >
+            <h3 class="DetailTitle">{{projectDetail?.title}}<br> <span> - {{projectDetail?.additionalInfo[0]}}</span></h3>
+            <div class="techsSection">
+                <ng-container *ngFor="let tech of projectDetail?.techsUsedList; let last=last">
+                    <button pButton type="button" class="ui-button-raised ui-button-rounded" [label]="tech"></button>
+                    <span *ngIf="!last">{{' '}}</span>
+                </ng-container>
+            </div>
+            <ng-container *ngFor="let info of projectDetail?.additionalInfo; let index = index">
+                <div class="additionalInfoLine">
+                    <p class="detail-additionalInfo" *ngIf="index > 0" >{{info}}</p>
+                </div>
+            </ng-container>
+        </div>
+        <div>
+            <!-- gallary -->
+            <p-galleria [images]="images" 
+                [panelWidth]="galleriaWidth"
+                [panelHeight]="galleriaHeight"
+                [autoPlay]="false"
+                [transitionInterval]="5000"
+                [showCaption]="false"
+            >
+            </p-galleria>
+        </div>
+    </div>
+    <p-footer>
+        <a [href]="projectDetail?.githubLink" target="_blank">
+            <button pButton class="ui-button-success" type="button" label="Vist Code Repo"
+            icon="pi pi-arrow-right" [iconPos]="'left'"></button></a>
+        <button pButton class=".ui-button-info" type="button" label="Close"
+            (click)="toggleDialog()" icon="pi pi-check" [iconPos]="'left'"></button>
+    </p-footer>
+</p-dialog>
+
