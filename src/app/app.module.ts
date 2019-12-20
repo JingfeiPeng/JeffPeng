@@ -26,6 +26,7 @@ import { ScrollScreenAnimationComponent } from './mainpage/scroll-screen-animati
 import { CardNumDirective } from './mask/card-num.directive';
 import { MonthYearDirective } from './mask/month-year.directive';
 import { PhoneMaskDirective } from './mask/phone-mask.directive';
+import { ExperiencesSectionComponent } from './mainpage/experiences-section/experiences-section.component';
 
 
 
@@ -53,7 +54,8 @@ export function createTranslateLoader(http: HttpClient) {
     ScrollScreenAnimationComponent,
     CardNumDirective,
     MonthYearDirective,
-    PhoneMaskDirective
+    PhoneMaskDirective,
+    ExperiencesSectionComponent
   ],
   imports: [
     BrowserModule,

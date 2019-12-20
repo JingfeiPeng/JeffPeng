@@ -19,5 +19,12 @@
     },
     "CONTACT_ME":{
         "CONTACT_ME":"Contact Me"
+    },
+    "EXPERIENCES":{
+        "CAPCO":{
+            "TITLE":"Software Engineering",
+            "DESCRIPTION_1":"",
+            "DESCRIPTION_2":""
+        }
     }
 }
