@@ -13,6 +13,9 @@
                     <ng-container *ngFor="let descriptioon of exp.descriptions" >
                         <li><p>{{ exp.title+'.'+ descriptioon | translate }}</p></li>
                     </ng-container>
+                    <ng-container *ngFor="let tech of exp.techsUsed">
+                        <button pButton type="button" class="ui-button-raised ui-button-rounded" [label]="tech"></button>
+                    </ng-container>
                 </ul>
                 <!-- <a href="#0" class="cd-read-more">Read more</a> -->
                 <span class="cd-date">{{ exp.period }}</span>

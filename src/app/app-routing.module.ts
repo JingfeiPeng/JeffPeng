@@ -15,3 +15,43 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+
+
+/* 
+
+// lazy loading
+const routes: Routes = [
+  {
+    path: '',
+    children: [
+      {
+        path: '',
+        loadChildren: 'app/enrollment/modules/authentication/authentication.module#AuthenticationModule',
+      },
+      {
+        path: 'enrollment',
+        canActivate: [
+          AuthGuard
+        ],
+        loadChildren: 'app/enrollment/enrollment.module#EnrollmentModule',
+      },
+      {
+        path: 'login',
+        loadChildren: 'app/enrollment/modules/authentication/authentication.module#AuthenticationModule',
+      },
+
+      {
+        path: 'error',
+        component: StandAloneErrorComponent
+      }
+    ]
+  },
+  {
+    path: '**',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  }
+];
+*/
