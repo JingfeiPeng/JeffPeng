@@ -23,6 +23,9 @@ import { ToolsListComponent } from './mainpage/tools-list/tools-list.component';
 import { CommonModule } from '@angular/common';
 import { SpecificDetailComponent } from './mainpage/projects/specific-detail/specific-detail.component';
 import { ScrollScreenAnimationComponent } from './mainpage/scroll-screen-animation/scroll-screen-animation.component';
+import { CardNumDirective } from './mask/card-num.directive';
+import { MonthYearDirective } from './mask/month-year.directive';
+import { PhoneMaskDirective } from './mask/phone-mask.directive';
 
 
 
@@ -47,7 +50,10 @@ export function createTranslateLoader(http: HttpClient) {
     InfoModalComponent,
     ToolsListComponent,
     SpecificDetailComponent,
-    ScrollScreenAnimationComponent
+    ScrollScreenAnimationComponent,
+    CardNumDirective,
+    MonthYearDirective,
+    PhoneMaskDirective
   ],
   imports: [
     BrowserModule,
