@@ -18,6 +18,11 @@ export class ScrollScreenAnimationComponent implements OnInit {
   constructor(public el: ElementRef) { }
 
   ngOnInit() {
+    const responsiveSceenSize = 600;
+    if (this.screenWidth < responsiveSceenSize){
+      this.imageheight = 80;
+      this.imageWidth = this.imageheight*0.8;
+    }
   }
 
   @HostListener('window:scroll',[])
