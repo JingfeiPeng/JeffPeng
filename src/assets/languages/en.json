@@ -19,5 +19,23 @@
     },
     "CONTACT_ME":{
         "CONTACT_ME":"Contact Me"
+    },
+    "CAPCO":{
+        "TITLE":"Software Engineering Internship",
+        "DESCRIPTION_1":"Prototyped in a small team the full stack of Object Model Mapper with react for BSAs to automate object modeling process. Distributed the app in both web-based and standalone desktop versions",
+        "DESCRIPTION_2":"Developed the full stack of two Angular Proof of Concepts apps both independently and in small agile teams for bank clients",
+        "DESCRIPTION_3":"Implemented elastic searching algorithm in backend for type ahead searches in angular POC apps"
+    },
+    "MMC":{
+        "TITLE":"Software Developer Internship",
+        "DESCRIPTION_1":"Independently developed a mobile app where insurance agents can review business data for company’s clients",
+        "DESCRIPTION_2":"Added Redux reducers and actions to update the store and increase code maintainability",
+        "DESCRIPTION_3":"Successfully released the mobile app to production after numerous demo and feedback cycles"
+    },
+    "Perfect Financial Solutions":{
+        "TITLE":"Web Developer",
+        "DESCRIPTION_1":"Developed a PHP program to manage a SQL client database to automate file filling and printing process",
+        "DESCRIPTION_2":"Created the full stack of a business information system for the company to manage client files, and for clients to create account, retrieve password and view their files upon login.",
+        "DESCRIPTION_3":"Built interactive front-end web pages and created backend of aforementioned systems with PHP"
     }
 }

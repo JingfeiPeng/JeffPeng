@@ -89,11 +89,28 @@ h1, h2 {
 Modules - reusable parts of our design
 
 -------------------------------- */
+#container{
+    width: 100%;
+    background: purple;
+    #header-title{
+        padding-top: 1em;
+        color:white;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+ul.descriptions{
+  list-style-type: circle;
+  margin-left: 1em;
+  button{
+    margin:2px;
+  }
+}
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 100%;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
-  background: purple;
 }
 .cd-container::after {
   /* clearfix */
@@ -143,6 +160,11 @@ xnugget info
 Main components 
 
 -------------------------------- */
+$subheadingColor: white;
+
+.cd-date{
+  color:$subheadingColor;
+}
 header {
   height: 200px;
   line-height: 200px;
@@ -253,9 +275,6 @@ header h1 {
     height: 60px;
     left: 50%;
     margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
   }
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
