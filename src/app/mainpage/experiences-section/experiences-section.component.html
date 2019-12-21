@@ -4,7 +4,7 @@
     <ng-container *ngFor="let exp of experiences; let index = index">
         <div class="cd-timeline-block">
             <div class="cd-timeline-img" [ngClass]="index%2 === 0 ? 'cd-picture':'cd-movie'" >
-                <img [src]="'../../../assets/images/'+exp.logoImg" alt="capco">
+                <img [src]="'../../../assets/images/'+exp.logoImg" [alt]="exp.logoImg">
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
@@ -24,16 +24,16 @@
     </ng-container>
   
 
-    <div class="cd-timeline-block">
+    <!-- <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-movie">
             <img src="../../../assets/images/rocket.png" alt="Movie">
-        </div> <!-- cd-timeline-img -->
+        </div> 
 
         <div class="cd-timeline-content">
             <h2>Final Section</h2>
             <p>This is the content of the last section</p>
             <span class="cd-date">Start</span>
         </div> 
-    </div> <!-- cd-timeline-block -->
+    </div>  -->
 </section> <!-- cd-timeline -->
 </div>

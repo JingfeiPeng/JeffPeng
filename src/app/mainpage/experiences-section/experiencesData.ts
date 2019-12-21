@@ -20,6 +20,6 @@ export const experiencesData: Experience[] = [
         descriptions:["DESCRIPTION_1","DESCRIPTION_2","DESCRIPTION_3"],
         techsUsed:["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "PHP", "SQL"],
         period:"May 2018 - Aug 2018",
-        logoImg:"mmc.png"
+        logoImg:""
     }
 ]

@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
       label:"About Me"
     },
     {
+      id:"Experiences",
+      label:"Experiences"
+    },
+    {
       id:"Projects",
       label:"Projects"
     },
@@ -69,13 +73,17 @@ export class HeaderComponent implements OnInit {
       navContainer.classList.add('shrinked');
     }
 
+    const lowerPartDetectionRange = 200;
+    const upperPartDetectionRange = -50;
+
     const steps = this.steps; // set up steps
     for (const i in steps) {
       if (steps.hasOwnProperty(i)) {
         // get actual target id as html
         const step = document.getElementById(`${steps[i].id}`) as HTMLElement;
         const stepYPosition = step.getBoundingClientRect().top;
-        if (stepYPosition < 200 && stepYPosition >= 0) { // within 200 of the height of page
+        // when the top part of the container is within the detection range
+        if (stepYPosition < lowerPartDetectionRange && stepYPosition >= upperPartDetectionRange) { 
           const stepNav = document.getElementById(
             `NAV-${steps[i].id}`
           ) as HTMLElement;
