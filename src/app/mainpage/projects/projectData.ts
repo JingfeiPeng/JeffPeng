@@ -22,7 +22,9 @@ export const projectData : ProjectInfo[] = [
       githubLink:"https://github.com/JingfeiPeng/EnergyStation",
       pictureLink:"energyStation.png",
       techsUsedList:["React Native", "Redux"],
-      picturesList:["energyStation.png"],
+      picturesList:["energyStation.png","energyStationIntro.png","energyStationLoginScreen.png","engeryStationRegister.png","ESHome.png",
+      "ES_activityDetail.png","ES_activityDetailTimer.png","ES_FriendList.png","ES_ViewAllUsers.png","ES_ViewFriendRequest.png",
+      "ES_Account_info.png","ES_Setting.png","ES_logout.png","ES_nickname.png"],
       additionalInfo:[
           "A cross-platform mobile app to encourage healthy life style",
           "This app enables users to create missions that they want to acccomplish and engery points are rewarded to the user when they accomplish their mission. Missions can be in 4 types: Excercise, health, Study, and work",
@@ -86,16 +88,16 @@ export const projectData : ProjectInfo[] = [
           "Built in Angular6"
         ]
     },
-    {
-      title:"Chat App",
-      techs:"React & Node & Express & Socket.io",
-      description:"a real-time chat applications built using react/react hooks. backend uses Node, Express, and Socket.io",
-      githubLink:"https://github.com/JingfeiPeng/JingfeiOnlineChatApp",
-      pictureLink:"chatApp.png",
-      techsUsedList:["React", "Node","Express", "Socket.io"],
-      picturesList:["chatApp.png","JeffSite.png"],
-      additionalInfo:["A Real Time Chat Application"]
-    },
+    // {
+    //   title:"Chat App",
+    //   techs:"React & Node & Express & Socket.io",
+    //   description:"a real-time chat applications built using react/react hooks. backend uses Node, Express, and Socket.io",
+    //   githubLink:"https://github.com/JingfeiPeng/JingfeiOnlineChatApp",
+    //   pictureLink:"chatApp.png",
+    //   techsUsedList:["React", "Node","Express", "Socket.io"],
+    //   picturesList:["chatApp.png"],
+    //   additionalInfo:["A Real Time Chat Application"]
+    // },
     {
       title:"Object Model Mapper",
       techs:"React & Electron & Express",
