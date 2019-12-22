@@ -15,7 +15,7 @@ import { fadeFrom } from 'src/app/animations/ExperienceFadein';
 export class ExperiencesSectionComponent implements OnInit {
   
   experiences: Experience[] = experiencesData;
-
+  initialXPosForSections: number = 100;
   constructor() { }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ export class ExperiencesSectionComponent implements OnInit {
   }
 
   fadeInDirection(index: number){
-    let initialPos = index % 2 == 0 ? -100: 100;
+    let initialPos = index % 2 == 0 && window.innerWidth>600 ? -this.initialXPosForSections: this.initialXPosForSections;
     let stateValue = this.experiences[index].show ? "shown": "hidden"
     return {value: stateValue, params : {initialPos: initialPos}};
   }
