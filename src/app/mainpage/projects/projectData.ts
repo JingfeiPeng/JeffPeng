@@ -114,10 +114,12 @@ export const projectData : ProjectInfo[] = [
       title:"Recipe Builder",
       techs:"React & GraphQL & MongoDB",
       description:"A tool to help average guys/girls to remember cooking recipes",
-      githubLink:"",
+      githubLink:"https://github.com/JingfeiPeng/graphqlproject",
       pictureLink:"underConstruction.png",
-      techsUsedList:["React", "React Native", "Apollo", "GraphQL", "Node", "Express", "MongoDB","mlab"],
+      techsUsedList:["React", "Apollo", "GraphQL", "Node", "Express", "MongoDB","mlab"],
       picturesList:["underConstruction.png"],
-      additionalInfo:["A tool to help average guys to remember cooking recipes"]
+      additionalInfo:["A tool to help average guys to remember cooking recipes",
+        "In progress in building a backend with Node/express, GraphQL ",
+        "In progress to build front-end with React, and apollo"]
     },
   ]
