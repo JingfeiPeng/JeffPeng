@@ -7,7 +7,7 @@
                 <img [src]="'../../../assets/images/'+exp.logoImg" [alt]="exp.logoImg">
             </div> <!-- cd-timeline-img -->
 
-            <div class="cd-timeline-content">
+            <div [id]="exp.title" class="cd-timeline-content" [@fadeFrom]="fadeInDirection(index)" >
                 <h2>{{ exp.title+'.TITLE' | translate }} </h2>
                 <ul class="descriptions">
                     <ng-container *ngFor="let descriptioon of exp.descriptions" >

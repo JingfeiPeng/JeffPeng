@@ -3,5 +3,6 @@ export interface Experience {
     descriptions: string[],
     techsUsed:string[],
     period:string,
-    logoImg:string
+    logoImg:string,
+    show: boolean
 }

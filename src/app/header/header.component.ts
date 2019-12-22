@@ -33,9 +33,9 @@ export class HeaderComponent implements OnInit {
       label:"Contact"
     }
   ]
-  
-  @HostListener('window:scroll', ['$event'])
+
   // called when scrolling
+  @HostListener('window:scroll', ['$event'])
   onScroll(ev: any) {
     this.scrollManager();
   }
