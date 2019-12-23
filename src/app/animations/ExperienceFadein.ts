@@ -10,14 +10,14 @@ export let fadeFrom = trigger('fadeFrom', [
         animate("0.5s  ease-out")
     ]),
 ])
-  
+
+
 // export let toLargeToSmall = trigger('toLargeToSmall', [
 //     // state('void', style({ opacity: 0, transform: 'translateX(-50px)'})),
 //     transition(':enter', [
 //         animate("0.5s ease-out", keyframes([
 //             style({
 //                 offset:.5,
-                
 //             })
 //         ]))
 //     ])

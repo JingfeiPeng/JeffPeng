@@ -18,7 +18,7 @@ export const projectData : ProjectInfo[] = [
     {
       title:"Energy Station",
       techs:"React Native & Redux",
-      description:"A mobile app build in React Native, featuring user authentication, manipulating to-do list activities, and manage user’s friend list.",
+      description:"A mobile app build in React Native, featuring user authentication, manipulating missions list activities, settings and manage user’s friend list.",
       githubLink:"https://github.com/JingfeiPeng/EnergyStation",
       pictureLink:"energyStation.png",
       techsUsedList:["React Native", "Redux"],
@@ -40,7 +40,9 @@ export const projectData : ProjectInfo[] = [
       githubLink:"https://github.com/JingfeiPeng/EnergyStationBackend",
       pictureLink:"mongodb.jpg",
       techsUsedList:["Node", "Express", "MongoDb", "Mongoose"],
-      picturesList:["mongodb.jpg"],
+      picturesList:["mongodb.jpg","energyStationIntro.png","energyStationLoginScreen.png","engeryStationRegister.png","ESHome.png",
+      "ES_activityDetail.png","ES_activityDetailTimer.png","ES_FriendList.png","ES_ViewAllUsers.png","ES_ViewFriendRequest.png",
+      "ES_Account_info.png","ES_Setting.png","ES_logout.png","ES_nickname.png"],
       additionalInfo:[
             "Backend Server to support Energy Station app",
             "Created APIs to handle CRUD operations on user's mission activities", 
