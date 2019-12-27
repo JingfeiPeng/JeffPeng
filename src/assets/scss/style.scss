@@ -146,47 +146,48 @@ footer{
 	opacity: 1;
 	right: 0;
   }
-  .projectDescription{
+.projectDescription{
+	display: relative;
 	padding-top: 10px;
 	font-size: 18px;
-	}
-	.circle {
-		margin: 0 auto;
-		width: 300px;
-		transform: translateY(8%);
-		padding-bottom: 50px;
-		transition: all 0.5s;
-		cursor: pointer;
-	}
-	.circle_title h2, .circle_title h3 {
-		opacity: 0;
-		margin: 0;
+}
+.circle {
+	margin: 0 auto;
+	width: 300px;
+	transform: translateY(8%);
+	padding-bottom: 50px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.circle_title h2, .circle_title h3 {
+	// opacity: 0;
+	margin: 0;
+	transition: all 0.2s 0.04s;
+	position: relative;
+	top: -10px;
+}
+.circle:hover h2, .circle:hover h3 {
+	opacity: 1;
+	top: -36px;
+}
+.circle:hover .content_shadow {
+		transform: scale(1.1);
+		box-shadow: 0px 31px 19px -2px #e0e8f9;
+		top: -22px;
+}
+.circle:hover h3 {
 		transition: all 0.2s 0.04s;
-		position: relative;
-		top: -10px;
-	}
-	.circle:hover h2, .circle:hover h3 {
-		opacity: 1;
-		top: -36px;
-	}
-	.circle:hover .content_shadow {
-			transform: scale(1.1);
-			box-shadow: 0px 31px 19px -2px #e0e8f9;
-			top: -22px;
-	}
-	.circle:hover h3 {
-			transition: all 0.2s 0.04s;
-	}
-	.circle:hover h2 {
-			transition: all 0.2s;
-	}
-	.content_shadow {
-		width: 200px;
-		height: 20px;
-		border-radius: 70%;
-		position: relative;
-		top: -44px;
-		transition: all 0.3s;
-		z-index: 0;
-		margin:0 auto;
+}
+.circle:hover h2 {
+		transition: all 0.2s;
+}
+.content_shadow {
+	width: 200px;
+	height: 20px;
+	border-radius: 70%;
+	position: relative;
+	top: -44px;
+	transition: all 0.3s;
+	z-index: 0;
+	margin:0 auto;
 }

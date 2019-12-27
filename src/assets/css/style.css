@@ -139,6 +139,7 @@ footer {
   right: 0; }
 
 .projectDescription {
+  display: relative;
   padding-top: 10px;
   font-size: 18px; }
 
@@ -151,7 +152,6 @@ footer {
   cursor: pointer; }
 
 .circle_title h2, .circle_title h3 {
-  opacity: 0;
   margin: 0;
   transition: all 0.2s 0.04s;
   position: relative;
