@@ -8,7 +8,7 @@
             </div> <!-- cd-timeline-img -->
 
             <div [id]="exp.title" class="cd-timeline-content" [@fadeFrom]="fadeInDirection(index)" >
-                <h2>{{ exp.title+'.TITLE' | translate }} </h2>
+                <h2>{{ exp.title+'.TITLE' | translate }} - {{ exp.title }} </h2>
                 <ul class="descriptions">
                     <ng-container *ngFor="let descriptioon of exp.descriptions" >
                         <li><p>{{ exp.title+'.'+ descriptioon.title+".TITLE" | translate }}</p></li>

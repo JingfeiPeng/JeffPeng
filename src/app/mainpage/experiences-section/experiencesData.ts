@@ -7,7 +7,7 @@ export const experiencesData: Experience[] = [
             {
                 title:"DESCRIPTION_1", details:["D1_D1","D1_D2"]
             },{
-                title:"DESCRIPTION_2", details:["D2_D1","D2_D2"]
+                title:"DESCRIPTION_2", details:["D2_D1","D2_D2","D2_D3"]
             }
         ],
         techsUsed:['Angular', 'rxjs', 'NgRx', 'React', 'React Hooks & Contexts', 'Joint.js', 'Node/Express', 'Electron', 'MongoDB', 'docker'],
@@ -40,7 +40,7 @@ export const experiencesData: Experience[] = [
         }],
         techsUsed:["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "PHP", "SQL"],
         period:"May 2018 - Aug 2018",
-        logoImg:"",
+        logoImg:"pfs.png",
         show:false
     }
 ]
