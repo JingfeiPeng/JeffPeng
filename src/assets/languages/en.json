@@ -25,15 +25,14 @@
         "TITLE":"Software Engineering Internship",
         "DESCRIPTION_1":{
             "TITLE":"Prototyped in a small team the full stack of Object Model Mapper with react for BSAs to automate object modeling process. Distributed the app in both web-based and standalone desktop versions.",
-            "D1_D1":"Utilized MongoDB to store data for web-based version and wrote files with Node to store data as files for desktop version",
-            "D1_D2":"The desktop version is bult by packaging the react app using Electron and having the server as a dependency"
+            "D1_D1":"Utilized MongoDB to store data for web-based version and used Node to store data as files for desktop version",
+            "D1_D2":"The desktop version is built by packaging the react app using Electron and having the server as a dependency"
         },
         "DESCRIPTION_2":{
-            "TITLE":"Developed the full stack of two Angular Proof of Concepts apps both independently and in small agile teams for bank clients",
-            "D2_D1":"Contributed in building a backend server"
-        },
-        "DESCRIPTION_3":{
-            "TITLE":"Implemented elastic searching algorithm in backend for type ahead searches in angular POC apps"
+            "TITLE":"Developed the full stack of two Angular Proof of Concepts(POC) apps both independently and in small agile teams for bank clients",
+            "D2_D1":"Angular POC 1 helps Payment Service Providers to register with the bank client through a set of registration proccess",
+            "D2_D2":"Angular POC 2 helps HR to automate the onboarding process of new employees and see employees' progress in registration",
+            "D2_D3":"Example Feature: Implemented elastic search algorithm in backend for type ahead searches in angular app"
         }
     },
     "MMC":{

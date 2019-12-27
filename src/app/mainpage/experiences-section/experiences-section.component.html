@@ -18,6 +18,7 @@
                             </li>
                         </ul>
                     </ng-container>
+                    <ng-container *ngIf="exp.descriptions[exp.descriptions.length-1].details.length > 0" ><br></ng-container>
                     <ng-container *ngFor="let tech of exp.techsUsed">
                         <button pButton type="button" class="ui-button-raised ui-button-rounded" [label]="tech"></button>
                     </ng-container>
