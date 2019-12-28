@@ -3,7 +3,9 @@
 	font-size: 1.3rem;
 	padding-bottom: 2vh;
 }
-
+#aboutMeImg{
+	height: 300px;
+}
 #aboutme{
 	display: flex;
 	justify-content: center;
@@ -41,5 +43,8 @@
 	.text{
 		font-size: 1rem;
 		padding-bottom: 10px;
+	}
+	#aboutMeImg{
+		height: 150px;
 	}
 }
