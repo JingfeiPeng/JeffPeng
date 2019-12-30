@@ -13,7 +13,9 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+    const text = document.querySelector("#introTitle");
+    const strText = text.textContent;
+    console.log(strText)
   }
 
   startViewing(){
