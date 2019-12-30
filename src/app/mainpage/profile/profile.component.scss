@@ -25,14 +25,21 @@ $sec: rgb(141, 161, 187);
 	}
 }
 
-#introTitle{
+.introTitle{
 	font-size: 50px;
-    display: block;
     line-height: 1;
     color: #FFF;
-    margin-top: 10px;
-
+	margin-top: 10px;
+	opacity: 0;
+	transition: all 0.5s ease;
+	transform: translateY(30px);
+	display: inline-block;
 }
+
+// .titleWithStyle{
+// 	opacity: 1;
+// 	transform: translateY(0px);
+// }
 
 .intro {
 	font-size: 40px;
@@ -143,13 +150,13 @@ $sec: rgb(141, 161, 187);
   
 @media only screen and (max-width:600px){
 	.jumbotron{
-		background: black;
+		background-size: 100% 100%;
 	}
 	#jumbText{
 		width:150px;
 		height:150px;
 	}
-	#introTitle{
+	.introTitle{
 		font-size: 30px;
 	}
 	.intro {

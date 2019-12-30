@@ -13,13 +13,27 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const text = document.querySelector("#introTitle");
-    const strText = text.textContent;
-    console.log(strText)
+    // const text = document.querySelector(".introTitle");
+    // const strText = text.textContent;
+    // const splitText = strText.split("");
+    // text.textContent = "";
+    // for (let i = 0; i < splitText.length; i++){
+    //   text.innerHTML +="<span>"+ splitText[i]+"</span>";
+    // }
+
+    // let char = 0;
+    // let timer = setInterval(()=>{
+    //   const span = text.querySelectorAll("span")[char++];
+    //   console.log(span)
+    //   span.classList.add('titleWithStyle');
+    //   if (char === splitText.length){
+    //     clearInterval(timer);
+    //     return;
+    //   }
+    // }, 50);
   }
 
   startViewing(){
-    console.log("hit")
     let aboutMe = document.getElementById("AboutMe");
     aboutMe.scrollIntoView({
       behavior: 'smooth',
