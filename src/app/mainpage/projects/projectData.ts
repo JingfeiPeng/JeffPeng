@@ -78,12 +78,12 @@ export const projectData : ProjectInfo[] = [
         ]
     },
     {
-      title:"Jeffpeng.herokuapp.com",
-      techs:"Angular & gulp & Heroku Hosting",
+      title:"jefferpeng.netlify.com",
+      techs:"Angular6 & gulp & Netlify hosting",
       description:"This is the codebase for the site you are seeing now. Available in both English and French",
       githubLink:"https://github.com/JingfeiPeng/JeffPeng",
       pictureLink:"personalWeb.png",
-      techsUsedList:["Angular", "gulp", "Heroku Hosting", "PrimeNg"],
+      techsUsedList:["Angular", "gulp", "PrimeNg", "Heroku Hosting", "Netlify hosting"],
       picturesList:["personalWeb.png", "perosnalWebTools.png"],
       additionalInfo:[
           "An awesome portfolio site to showcase some of my works", 
