@@ -87,7 +87,8 @@ export const projectData : ProjectInfo[] = [
       picturesList:["personalWeb.png", "perosnalWebTools.png"],
       additionalInfo:[
           "An awesome portfolio site to showcase some of my works", 
-          "Built in Angular6"
+          "Built in Angular6",
+          "Utlized Angular translation module for French Translation. Though French translation text was created using Google translate."
         ]
     },
     // {
