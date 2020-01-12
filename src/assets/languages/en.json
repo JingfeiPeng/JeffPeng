@@ -10,6 +10,9 @@
     "HOME":{
         "DESCRIPTION":"Student, Software Developer"
     },
+    "TECH_LIST":{
+        "TITLE":"Quelques technologies que j'ai utilisées"
+    },
     "ABOUT_ME":{
         "HEADER":"About me",
         "DESCRIPTION":"Hi there! My name is Jeffer Peng. I am currently an undergrad student majoring in Computer Science at University of Waterloo. ",

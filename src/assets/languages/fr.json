@@ -1,23 +1,65 @@
-{
-    "HEADER":{
-        "Home":"Maison",
-        "AboutMe":"À propos de moi",
-        "Projects":"Projets",
-        "Contact":"Contact",
-        "Resume":"Reprendre"
+{ 
+    "HEADER":{ 
+    "Home":"Maison",
+    "AboutMe":"About Me",
+    "Projects":"Projets",
+    "Experiences":"Expériences",
+    "Contact":"Contact",
+    "Resume":"Reprendre"
     },
-    "HOME":{
-        "DESCRIPTION":"Student, Software Developer"
+    "HOME":{ 
+    "DESCRIPTION":"Étudiant, développeur de logiciels"
     },
-    "ABOUT_ME":{
-        "HEADER":"À propos de moi",
-        "DESCRIPTION":"Salut! Je m'appelle Jeffer Peng. Je suis un ingénieur logiciel expérimenté depuis plus de 3 ans.",
-        "EXPERIENCES_DESCRIPTION":"Je suis expérimenté dans le développement web full stack, la gestion de base de données et la programmation orientée objet. J'ai des expériences en JavaScript ES6, C ++, Python, HTML, CSS, React.js, Natif React, Node.js, Express.js, MongoDB, Java, PHP, SqlServer. Parle couramment l'anglais et le mandarin."
+    "TECH_LIST":{
+        "TITLE":""
     },
-    "PROJECTS":{
-        "PROJECTS":"Projets"
+    "ABOUT_ME":{ 
+    "HEADER":"A propos de moi",
+    "DESCRIPTION":"Bonjour! Je m'appelle Jeffer Peng. Je suis actuellement un étudiant de premier cycle spécialisé en informatique à l'Université de Waterloo.",
+    "EXPERIENCES_DESCRIPTION":"J'ai des expériences en développement de pile complète, en algorithmes et structures de données, et en programmation orientée objet. Je parle couramment l'anglais et le mandarin. J'apporte toujours 100% au travail que je fais et je n'ai pas peur de prendre des initiatives et chercher de nouveaux défis. "
     },
-    "CONTACT_ME":{
-        "CONTACT_ME":"Contactez moi"
+    "PROJECTS":{ 
+    "PROJECTS":"Projets"
+    },
+    "CONTACT_ME":{ 
+    "CONTACT_ME":"Contactez-moi"
+    },
+    "CAPCO":{ 
+    "TITLE":"Stage de génie logiciel",
+    "DESCRIPTION_1":{ 
+    "TITLE":"Prototypé dans une petite équipe la pile complète de Object Model Mapper avec react pour les BSA afin d'automatiser le processus de modélisation d'objet. Distribué l'application dans les versions de bureau Web et autonomes.",
+    "D1_D1":"MongoDB utilisé pour stocker les données pour la version Web et Node utilisé pour stocker les données sous forme de fichiers pour la version de bureau",
+    "D1_D2":"La version de bureau est construite en empaquetant l'application React en utilisant Electron et en ayant le serveur comme dépendance"
+    },
+    "DESCRIPTION_2":{ 
+    "TITLE":"Développement de la pile complète de deux applications POC (Angular Proof of Concepts) à la fois indépendamment et en petites équipes agiles pour les clients bancaires",
+    "D2_D1":"Angular POC 1 aide les prestataires de services de paiement à s'inscrire auprès du client de la banque via un ensemble de processus d'enregistrement",
+    "D2_D2":"Angular POC 2 aide les RH à automatiser le processus d'intégration des nouveaux employés et à voir les progrès des employés en matière d'inscription",
+    "D2_D3":"Exemple de fonctionnalité: implémentation d'un algorithme de recherche élastique dans le backend pour les recherches de type avant dans l'application angulaire"
     }
-}
+    },
+    "MMC":{ 
+    "TITLE":"Stage Développeur Logiciel",
+    "DESCRIPTION_1":{ 
+    "TITLE":"Développement indépendant d'une application mobile permettant aux agents d'assurance de consulter les données commerciales des clients de l'entreprise"
+    },
+    "DESCRIPTION_2":{ 
+    "TITLE":"Ajout de réducteurs et d'actions Redux pour mettre à jour le magasin et augmenter la maintenabilité du code"
+    },
+    "DESCRIPTION_3":{ 
+    "TITLE":"L'application mobile a été mise en production avec succès après de nombreux cycles de démonstration et de rétroaction"
+    }
+    },
+    "Perfect Financial Solutions":{ 
+    "TITLE":"Développeur Web",
+    "DESCRIPTION_1":{ 
+    "TITLE":"Développement d'un programme PHP pour gérer une base de données client SQL pour automatiser le processus de remplissage et d'impression de fichiers"
+    },
+    "DESCRIPTION_2":{ 
+    "TITLE":"Création de la pile complète d'un système d'information d'entreprise permettant à l'entreprise de gérer les fichiers clients et aux clients de créer un compte, de récupérer le mot de passe et d'afficher leurs fichiers lors de la connexion."
+    },
+    "DESCRIPTION_3":{ 
+    "TITLE":"Création de pages Web frontales interactives et création du backend des systèmes susmentionnés avec PHP"
+    }
+    }
+    }
