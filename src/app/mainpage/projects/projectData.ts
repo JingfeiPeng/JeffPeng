@@ -114,6 +114,21 @@ export const projectData : ProjectInfo[] = [
         "Note: I have been authorized to display the images and description of this ongoing POC project. However, I am not authorized to share the source codes. Thus the github link has no code contents"]
     },
     {
+      title:"Graphical Sudoku Game ",
+      techs:"Angular & Django",
+      description:"A sudoku solving game",
+      githubLink:"https://github.com/JingfeiPeng/sudoku_game",
+      pictureLink:"sudoku.png",
+      techsUsedList:["Angular", "Django", "TypeScript"],
+      picturesList:["sudoku.png","sudoku1.png","sudoku2.png"],
+      additionalInfo:[
+        "A full-stack web application for users to solve sudoku with hints, shows solutions and validate user’s submission",
+        "Created backend servers with Django to host APIs for solving, fetching sudoku and validating user’s submissions",
+        "Implemented backtracking algorithm with python in backend to solve any complex sudoku puzzles",
+        "Designed and implemented responsive web user interfaces in Angular to handler user interactions with sudoku"
+      ]
+    },
+    {
       title:"Recipe Builder",
       techs:"React & GraphQL & MongoDB",
       description:"A tool to help average guys/girls to remember cooking recipes",
