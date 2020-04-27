@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 enum TechStacks {
   frontEnd = "FRONT_END",
   backEnd = "BACK_END",
-  others = "OTHERS"
+  others = "OTHERS",
+  dataScience='DATA_SCIENCE'
 }
 
 @Component({
@@ -13,10 +14,11 @@ enum TechStacks {
 })
 export class ToolsListComponent implements OnInit {
   TechStacks = TechStacks;
-  techOrders = [TechStacks.frontEnd, TechStacks.backEnd, TechStacks.others]
+  techOrders = [TechStacks.frontEnd, TechStacks.backEnd,TechStacks.dataScience, TechStacks.others]
   techs = {
     [TechStacks.frontEnd]: ["React", "React Native", "Redux",  "Angular", "Rxjx", "NgRx", "Electron", "Javascript/Typescript",
     "HTML", "CSS", "SCSS", "Gulp", "Apollo", "gql", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg"],
+    [TechStacks.dataScience]:['Python','Numpy','Pandas','Seaborn','matplotlib'],
     [TechStacks.backEnd]: ["Node", "Express","GraphQL", "Socket.io","Java","Spring", "Spring Boot", "PHP", "MongoDB", "Mongoose", "Django","SQL"],
     [TechStacks.others] :["C", "C++","Python", "PyGame", "Tensorflow", "Numpy", "docker", "Git", "SVN", "Linux", "Bash","Vim", "UML", "Heroku", "Mocha", "Chai"]
   }
