@@ -19,7 +19,7 @@
                     </div>
                     <a ><img [src]="'../../../assets/images/'+project.pictureLink" [alt]="project.pictureLink"/></a>
                     <div class="content_shadow"></div>
-                    <p class="projectDescription">{{ project.description }}</p>
+                    <p class="projectDescription" [innerHTML]='project.description'></p>
                 </div>
             </div>
         </ng-container>
