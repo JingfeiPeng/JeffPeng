@@ -7,10 +7,10 @@ export const projectData : ProjectInfo[] = [
     description:"A database course group project that stores real data of University course & degree information to help students plan future courses",
     githubLink:"https://github.com/RobbieZhuang/CS348Project",
     pictureLink:"courseplanner.png",
-    techsUsedList:["Angular","PostgresSQL",'Flask','Python'],
+    techsUsedList:["Angular","PostgresSQL",'Flask','psycopg2','Python'],
     picturesList:["courseplanner.png"],
     additionalInfo:[
-      "Implemented features and made use of complex SQL queries",
+      "A courses/degree planner full stack system  to help students plan future courses",
       "Data gathering and backend implemented in python",
       "Demo avaliable at <a target='blank' href='https://www.youtube.com/watch?v=dRfBnhh9kOY&t=7s'> here </a>"
     ]
