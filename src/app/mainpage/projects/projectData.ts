@@ -4,17 +4,18 @@ export const projectData : ProjectInfo[] = [
   {
     title:"University Courses & Degree Planner",
     techs:"Angular & PostgresSQL & Flask",
-    description:"A database course group project that stores real data of University course & degree information to help studnets plan future courses",
+    description:"A database course group project that stores real data of University course & degree information to help students plan future courses",
     githubLink:"https://github.com/RobbieZhuang/CS348Project",
     pictureLink:"courseplanner.png",
-    techsUsedList:["Angular","PostgresSQL",'Flask'],
+    techsUsedList:["Angular","PostgresSQL",'Flask','psycopg2','Python'],
     picturesList:["courseplanner.png"],
     additionalInfo:[
+      "A courses/degree planner full stack system  to help students plan future courses",
       "Designed 10+ SQL tables in PostgreSQL to model relationships between courses, prerequisites, degree requirements, term offerings and professors",
       "Created RESTful backend with Flask and python to execute complicated SQL queries and implemented database indexing to speed up by queries by 10\%",
       "Fetched data from uWaterloo API and used python to generate +100,000 sql Insert statements to populate SQL tables",
       "Built frontend in Angular utilizing tables and trees to display results",
-      "Demo avaliable at https://www.youtube.com/watch?v=dRfBnhh9kOY&t=7s"
+      "Demo avaliable at <a target='blank' href='https://www.youtube.com/watch?v=dRfBnhh9kOY&t=7s'> here </a>"
     ]
     }  
   ,{

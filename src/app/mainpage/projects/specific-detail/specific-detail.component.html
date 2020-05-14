@@ -21,7 +21,7 @@
             </div>
             <ng-container *ngFor="let info of projectDetail?.additionalInfo; let index = index">
                 <div class="additionalInfoLine">
-                    <p class="detail-additionalInfo" *ngIf="index > 0" >{{info}}</p>
+                    <p class="detail-additionalInfo" *ngIf="index > 0" [innerHTML]='info'></p>
                 </div>
             </ng-container>
         </div>
