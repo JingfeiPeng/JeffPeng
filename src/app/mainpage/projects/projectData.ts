@@ -10,8 +10,10 @@ export const projectData : ProjectInfo[] = [
     techsUsedList:["Angular","PostgresSQL",'Flask'],
     picturesList:["courseplanner.png"],
     additionalInfo:[
-      "Implemented features and made use of complex SQL queries",
-      "Data gathering and backend implemented in python",
+      "Designed 10+ SQL tables in PostgreSQL to model relationships between courses, prerequisites, degree requirements, term offerings and professors",
+      "Created RESTful backend with Flask and python to execute complicated SQL queries and implemented database indexing to speed up by queries by 10\%",
+      "Fetched data from uWaterloo API and used python to generate +100,000 sql Insert statements to populate SQL tables",
+      "Built frontend in Angular utilizing tables and trees to display results",
       "Demo avaliable at https://www.youtube.com/watch?v=dRfBnhh9kOY&t=7s"
     ]
     }  
