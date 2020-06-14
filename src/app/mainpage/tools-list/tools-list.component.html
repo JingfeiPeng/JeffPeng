@@ -6,7 +6,7 @@
         <span [ngStyle]="styleType(TechStacks.dataScience)" (click)="highlight(TechStacks.dataScience)" >Data Science</span>
         <span [ngStyle]="styleType(TechStacks.others)" (click)="highlight(TechStacks.others)"  >Others</span>
     </div>
-    <div>
+    <div class="teachStackArea">
         <ng-container *ngFor="let category of techOrders">
             <div class="techStack" 
                 [class.inactive]="activeTech !== category" 
@@ -15,6 +15,7 @@
                 <ng-container *ngFor="let tech of techs[category]; let last = last" >
                     <span> {{tech}} </span>
                 </ng-container>
+                <br>
             </div>
         </ng-container>
     </div>

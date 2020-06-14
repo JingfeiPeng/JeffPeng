@@ -9,9 +9,9 @@
         <a id="githubLink" href="https://github.com/JingfeiPeng">Github: Jeffer Jingfei Peng</a>
         <hr/>
     </div>
-    <div class="row">
-        <ng-container *ngFor="let project of projects; let index=index">
-            <div class="col-sm-4">
+    <div class="project-area">
+        <ng-container *ngFor="let project of projects; let index=index; let first = first">
+            <div [ngClass]="{'project-data':true, 'margin-left': !first}"> 
                 <div class="circle" (click)="showDetail(index)">
                     <div class="circle_title">
                         <h2 class="projectTitle"> {{project.title}} </h2>

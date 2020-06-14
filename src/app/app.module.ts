@@ -27,6 +27,7 @@ import { CardNumDirective } from './mask/card-num.directive';
 import { MonthYearDirective } from './mask/month-year.directive';
 import { PhoneMaskDirective } from './mask/phone-mask.directive';
 import { ExperiencesSectionComponent } from './mainpage/experiences-section/experiences-section.component';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -55,7 +56,8 @@ export function createTranslateLoader(http: HttpClient) {
     CardNumDirective,
     MonthYearDirective,
     PhoneMaskDirective,
-    ExperiencesSectionComponent
+    ExperiencesSectionComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

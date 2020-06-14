@@ -29,19 +29,6 @@ body {
   text-transform: uppercase;
   text-align: center; }
 
-.col-sm-4 {
-  text-align: center;
-  font-size: 1.3rem; }
-
-.col-sm-4 img {
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  width: 300px;
-  height: 170px; }
-
-.col-sm-4 img:hover {
-  border-radius: 50%;
-  box-shadow: 0 0 5px grey; }
 
 #services {
   width: 100%;

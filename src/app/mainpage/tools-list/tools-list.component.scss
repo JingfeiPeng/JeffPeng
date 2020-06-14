@@ -1,66 +1,74 @@
 $width: 60vw;
-$responsiveWidth:95vw;
+$responsiveWidth: 95vw;
 
-#ToolsList{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3em;
+#ToolsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+  h3 {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: 5vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
     h3 {
-        font-size: 1.8rem;
+      font-size: 1.4rem;
     }
-    @media only screen and (max-width:600px){
-        margin-top: 5vh;
-        h3 {
-            font-size: 1.4rem;
-        }
-    }
+  }
 }
 
-.techStack{
-    width: $width;
+.teachStackArea {
+    max-width: $width;
+    text-align: center;
+    .techStack {
+    display: inline;
     text-align: center;
     span {
-        padding-right: 2vw;
-        line-height: 2;
-        font-size: 1.3rem;
+      padding-right: 2vw;
+      line-height: 2;
+      font-size: 1.3rem;
     }
-    @media only screen and (max-width:600px){
-        width: $responsiveWidth;
-        span {
-            font-size: 1rem;
-        }
+    @media only screen and (max-width: 600px) {
+      max-width: $responsiveWidth;
+      span {
+        font-size: 1rem;
+      }
     }
+  }
 }
 
-.chooseTechType{
-    margin: 20px;
-    padding-bottom: 5px;
-    width: $width;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid rgb(179, 175, 175);
+.chooseTechType {
+  margin: 20px;
+  padding-bottom: 5px;
+  max-width: $width;
+  min-width: $width;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(179, 175, 175);
+  span {
+    margin-right: 1em;
+    font-size: 1.2rem;
+    cursor: grab;
+  }
+  @media only screen and (max-width: 600px) {
+    max-width: $responsiveWidth;
     span {
-        margin-right:1em;
-        font-size: 1.5rem;
-        cursor: grab;
+      margin-right: 1em;
+      font-size: 1rem;
     }
-    @media only screen and (max-width:600px){
-        width: $responsiveWidth;
-        a {
-            margin-right:1em;
-            font-size: 1rem;
-        }
-    }
+  }
 }
 
-.inactive{
-    color: rgb(168, 165, 165);
-    transition: 0.5s ease;
+.inactive {
+  color: rgb(168, 165, 165);
+  transition: 0.5s ease;
 }
 
 .active {
-    color: black;
-    transition: 0.5s ease;
+  color: black;
+  transition: 0.5s ease;
 }

@@ -1,6 +1,32 @@
-@media only screen and (max-width:600px){
-    .circle_title h2, .circle_title h3 {
-        opacity: 1;
-		top: -36px;
+@media only screen and (max-width: 600px) {
+  .circle_title h2,
+  .circle_title h3 {
+    opacity: 1;
+    top: -36px;
+  }
+}
+
+.project-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.margin-left {
+  margin-left: 2rem;
+}
+
+.project-data {
+  text-align: center;
+  font-size: 1.3rem;
+  img {
+    transition: 0.5s all ease;
+    width: 300px;
+    height: 170px;
+    &:hover {
+      border-radius: 50%;
+      box-shadow: 0 0 5px grey;
     }
+  }
 }
