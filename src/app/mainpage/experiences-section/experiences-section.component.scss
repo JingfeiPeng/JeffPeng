@@ -419,7 +419,7 @@ header h1 {
   .cd-timeline-content {
     margin-left: 0;
     padding: 1.6em;
-    width: 45%;
+    max-width: 45%;
   }
   .cd-timeline-content::before {
     top: 24px;
