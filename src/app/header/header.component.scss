@@ -18,7 +18,7 @@
 .fixed{
 	position: fixed;
 	z-index: ceil($number: 10);
-	width: 100%;
+	width: 100vw;
 }
 .navStyle{
 	height:150px;
