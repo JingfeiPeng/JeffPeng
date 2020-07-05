@@ -1,6 +1,6 @@
-$upDownSpacing:50px;
+$upDownSpacing: 50px;
 $textFont: 1.2rem;
-$grey:  #a19f9f;
+$grey: #a19f9f;
 
 @mixin flex($direction) {
   display: flex;
@@ -10,9 +10,8 @@ $grey:  #a19f9f;
 #aboutMeImg {
   max-height: 35vw;
   width: auto;
-  padding-right:3rem;
+  padding-right: 3rem;
 }
-
 
 .aboutMe {
   padding-top: $upDownSpacing;
@@ -33,24 +32,20 @@ $grey:  #a19f9f;
     .description {
       padding-top: 2rem;
       font-size: $textFont;
-      color:$grey;
+      color: $grey;
     }
   }
 }
 
-.flex-row{
+.list-description {
   @include flex(row);
   padding-top: 2rem;
-  div:first-child {
-    padding-right: 2rem;
-  }
   .titles {
-    h3 {
-      font-weight: 700;
-      color: black;
-    }
+    padding-right: 2vw;
+    font-weight: 700;
+    color: black;
   }
-  h3 {
+  td {
     font-size: $textFont;
     line-height: 1.7;
     color: $grey;
@@ -62,8 +57,8 @@ $grey:  #a19f9f;
   }
 }
 
-
-@media only screen and (max-width:700px){
+@media only screen and (max-width: 700px) {
+  $textFont: 1rem;
   #aboutMeImg {
     display: none;
   }
