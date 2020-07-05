@@ -1,50 +1,70 @@
+$upDownSpacing:50px;
+$textFont: 1.2rem;
+$grey:  #a19f9f;
 
-.text{
-	font-size: 1.3rem;
-	padding-bottom: 2vh;
-}
-#aboutMeImg{
-	height: 300px;
-}
-#aboutme{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align:center;
-	// background: linear-gradient(to bottom, white, #eadce3);
-	// background: linear-gradient(to bottom, white, #eadce3);
-
-	height:60vh;
-	width: 100vw;
-	h2{
-		padding-top: 20px;
-	}
-	img{
-		margin:0 20px 20px 20px;
-		float:left;
-		border-radius:10%;
-		border:2px solid black;
-		box-shadow:0 0 10px grey;
-	}
-	.aboutMeContent{
-		width: 70vw;
-
-	}
-	.aboutMeTitle{
-		padding-bottom: 3vh;
-	}
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
 }
 
-@media only screen and (max-width:600px){
-	#aboutme{
-		height: unset;
-	}
-	.text{
-		font-size: 1rem;
-		padding-bottom: 10px;
-	}
-	#aboutMeImg{
-		height: 150px;
-	}
+#aboutMeImg {
+  max-height: 35vw;
+  width: auto;
+}
+
+
+.aboutMe {
+  padding-top: $upDownSpacing;
+  padding-bottom: $upDownSpacing;
+  @include flex(row);
+  justify-content: center;
+  width: 100vw;
+  .innerContent {
+    @include flex(row);
+    width: 70vw;
+  }
+  .content {
+    padding-top: 3rem;
+    padding-left:3rem;
+    h2 {
+      font-weight: 800;
+      font-size: 3rem;
+    }
+    .description {
+      padding-top: 2rem;
+      font-size: $textFont;
+      color:$grey;
+    }
+  }
+}
+
+.flex-row{
+  @include flex(row);
+  padding-top: 2rem;
+  div:first-child {
+    padding-right: 2rem;
+  }
+  .titles {
+    h3 {
+      font-weight: 700;
+      color: black;
+    }
+  }
+  h3 {
+    font-size: $textFont;
+    line-height: 1.7;
+    color: $grey;
+  }
+  p {
+    color: $grey;
+    font-size: $textFont;
+    line-height: 1.7;
+  }
+}
+
+
+@media only screen and (max-width:700px){
+  #aboutMeImg {
+    display: none;
+  }
 }

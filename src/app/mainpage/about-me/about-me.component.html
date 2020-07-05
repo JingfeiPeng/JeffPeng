@@ -1,15 +1,29 @@
-<div class="aboutMe" id="aboutme">
-    <div class="aboutMeTitle">
-        <h2>{{ "ABOUT_ME.HEADER" | translate }}</h2>
-    </div>
-    <div class="aboutMeContent">
-        <img id="aboutMeImg" src="../../../assets/images/myPicture.png" style="vertical-align:middle"/>
-        <div>
-            <div class="text">
-                {{ "ABOUT_ME.DESCRIPTION" | translate }}
+<div class="aboutMe">
+    <div class="innerContent">
+        <div class="picture">
+            <img id="aboutMeImg" src="../../../assets/images/myPicture.png" alt="My Picture"/>
+        </div>
+        <div class="content">
+            <h2>{{ "ABOUT_ME.HEADER" | translate }}</h2>
+            <div class="description">
+                <p>
+                    {{ "ABOUT_ME.DESCRIPTION" | translate }}
+                    {{ 'ABOUT_ME.EXPERIENCES_DESCRIPTION' | translate }}
+                </p>
             </div>
-            <div class="text">
-                {{ 'ABOUT_ME.EXPERIENCES_DESCRIPTION' | translate }}
+            <div class="flex-row">
+              <div class="titles">
+                <h3>Name: </h3>
+                <h3>Date of Birth</h3>
+                <h3>Email</h3>
+                <h3>Languages</h3>
+              </div>
+              <div>
+                <h3>Jeffer Peng</h3>
+                <h3>Dec.21st 1998</h3>
+                <h3>jf2peng@uwaterloo.ca</h3>
+                <h3>English, Chinese Mandarin </h3>
+              </div>
             </div>
         </div>
     </div>
