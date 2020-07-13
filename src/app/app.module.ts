@@ -27,6 +27,7 @@ import { CardNumDirective } from './mask/card-num.directive';
 import { MonthYearDirective } from './mask/month-year.directive';
 import { PhoneMaskDirective } from './mask/phone-mask.directive';
 import { ExperiencesSectionComponent } from './mainpage/experiences-section/experiences-section.component';
+import { FormsModule } from '@angular/forms';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http,
@@ -58,6 +59,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     CommonModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FontAwesomeModule,

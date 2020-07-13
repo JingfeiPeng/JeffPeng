@@ -1,36 +1,36 @@
 {
     "HEADER":{
-        "Home":"Home",
-        "AboutMe":"About Me",
-        "Projects":"Projects",
-        "Experiences":"Experiences",
-        "Contact":"Contact",
+        "Home":"开头页面",
+        "AboutMe":"我是谁",
+        "Projects":"我干过啥",
+        "Experiences":"我的经验",
+        "Contact":"联系方式",
         "Resume":"Resume"
     },
     "HOME":{
-        "NAME": "Jeffer Peng",
-        "DESCRIPTION":"Student, Software Developer"
+        "NAME": "彭靖飞",
+        "DESCRIPTION":"滑铁卢大学， CS学生"
     },
     "TECH_LIST":{
-        "TITLE":"Some techs that I have used",
-        "FRONT_END":"Front End",
-        "BACK_END":"Back End",
-        "DATA_SCIENCE":"Data Science",
-        "OTHERS": "Others"
+        "TITLE":"我用过的构架，语言，工具",
+        "FRONT_END":"前端",
+        "BACK_END":"后端",
+        "DATA_SCIENCE":"数据",
+        "OTHERS": "其他"
     },
     "ABOUT_ME":{
-        "HEADER":"About Me",
-        "DESCRIPTION":"Hi there! My name is Jeffer Peng. I am an undergrad student majoring in Computer Science at University of Waterloo.",
-        "EXPERIENCES_DESCRIPTION":"Experienced in full stack development, algorithms and data structures, and Object Oriented programming. I always bring 100% to the work I do and I am not afraid to take initiatives and seek new challenges.",
-        "Name":"Name",
-        "DateOfBirth": "Date of Birth",
-        "DateOfBirthVal":"Dec.21st 1998",
-        "Email": "Email",
-        "Languages": "Languages",
-        "LanguagesVal": "English, Chinese Mandarin"
+        "HEADER":"关于我",
+        "DESCRIPTION":"尊敬的领导，我叫彭靖飞，是个滑铁卢大学CS系大三在读本科生。我讲预计于2022年5月份毕业",
+        "EXPERIENCES_DESCRIPTION":"正直和努力是我做人的原则，沉着和冷静是我遇事的态度，爱好广泛使我非常充实。众多的朋友使我倍感富有！我很强的事业心和责任感使我能够面对任何困难和挑战。",
+        "Name":"名字",
+        "DateOfBirth": "出生日期",
+        "DateOfBirthVal":"1998年 12月21日",
+        "Email": "邮箱",
+        "Languages": "会的语言",
+        "LanguagesVal": "英语，中文"
     },
     "PROJECTS":{
-        "PROJECTS":"Projects"
+        "PROJECTS":"我的项目"
     },
     "CONTACT_ME":{
         "CONTACT_ME":"Contact Me"

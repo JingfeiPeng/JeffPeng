@@ -15,6 +15,16 @@
 	border-bottom: 2px solid grey !important;
 }
 
+select {
+	background: rgba(0,0,0,0);
+	border: none;
+	color: white;
+	text-align-last: center;
+	option {
+		background: black;
+	}
+}
+
 .fixed{
 	position: fixed;
 	z-index: ceil($number: 10);
@@ -52,6 +62,12 @@
 	div p{
 		color:grey;
 		text-shadow: none;
+	}
+	select {
+		color: grey;
+		option {
+			background: white;
+		}
 	}
 	.nav-link{
 		color: grey;

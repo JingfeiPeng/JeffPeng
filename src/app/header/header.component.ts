@@ -1,6 +1,17 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import {HeaderSteps} from '../models/HeaderSteps.model'
+import { HeaderSteps } from '../models/HeaderSteps.model'
+
+interface Language {
+  displayText: string,
+  json: string
+}
+
+const Languages: { [ langName: string]: Language} = {
+  ch: { displayText: '中文', json: 'ch'},
+  en: { displayText: 'En', json: 'en'},
+  fr: { displayText: 'Fr', json: 'fr'}
+}
 
 @Component({
   selector: 'app-header',
@@ -9,28 +20,29 @@ import {HeaderSteps} from '../models/HeaderSteps.model'
 })
 export class HeaderComponent implements OnInit {
 
-  language = "Fr"
+  selectedLang: Language = Languages.en;
+  languages = [ Languages.en, Languages.fr, Languages.ch]
   windowHeight: number = window.innerHeight;
-  steps : HeaderSteps[] = [
+  steps: HeaderSteps[] = [
     {
-      id:"Home",
-      label:"Home"
+      id: "Home",
+      label: "Home"
     },
     {
-      id:"AboutMe",
-      label:"About Me"
+      id: "AboutMe",
+      label: "About Me"
     },
     {
-      id:"Experiences",
-      label:"Experiences"
+      id: "Experiences",
+      label: "Experiences"
     },
     {
-      id:"Projects",
-      label:"Projects"
+      id: "Projects",
+      label: "Projects"
     },
     {
-      id:"Contact",
-      label:"Contact"
+      id: "Contact",
+      label: "Contact"
     }
   ]
 
@@ -44,25 +56,30 @@ export class HeaderComponent implements OnInit {
   onResize(event) {
     this.windowHeight = window.innerHeight;
   }
-
+  
   constructor(private translate: TranslateService) {
-    translate.addLangs(['en', 'fr']);
+    translate.addLangs(['en', 'fr', 'ch']);
     translate.setDefaultLang('en');
 
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en')
-   }
-
-  changeLanguage(){
-    this.language = (this.language === "Fr") ? "En":"Fr";
-    const languageCode = (this.language === "Fr") ? "en":"fr";
-    this.translate.use(`${languageCode}`);
+    translate.use(browserLang.match(/en|fr|ch/) ? browserLang : 'en')
   }
+
+  changeLanguage(lang: Language){
+    this.selectedLang = lang;
+    this.translate.use(`${lang.json}`);
+  }
+
+  // changeLanguage() {
+    // this.language = this.language === languages.chinese ? languages.english : languages.chinese;
+    // const languageCode = (this.language === languages.chinese) ? "en" : "ch";
+    // this.translate.use(`${languageCode}`);
+  // }
 
   ngOnInit() {
   }
 
-  scrollManager(){
+  scrollManager() {
     const scrollPosY = window.pageYOffset || document.body.scrollTop;
     const navContainer = document.getElementById('header');
     const aboutmeContainer = document.getElementById(`AboutMe`) as HTMLElement;
@@ -83,7 +100,7 @@ export class HeaderComponent implements OnInit {
         const step = document.getElementById(`${steps[i].id}`) as HTMLElement;
         const stepYPosition = step.getBoundingClientRect().top;
         // when the top part of the container is within the detection range
-        if (stepYPosition < lowerPartDetectionRange && stepYPosition >= upperPartDetectionRange) { 
+        if (stepYPosition < lowerPartDetectionRange && stepYPosition >= upperPartDetectionRange) {
           const stepNav = document.getElementById(
             `NAV-${steps[i].id}`
           ) as HTMLElement;
@@ -97,12 +114,12 @@ export class HeaderComponent implements OnInit {
           }
           break;
         }
-      } 
+      }
     }
 
   }
 
-  goToStep(stepId : string){
+  goToStep(stepId: string) {
     let index;
     for (const i in this.steps) {
       if (this.steps.hasOwnProperty(i)) {
@@ -113,7 +130,7 @@ export class HeaderComponent implements OnInit {
       }
     }
     let stepTop = document.getElementById(stepId);
-    if (index === 0){
+    if (index === 0) {
       stepTop = document.querySelector('app-header');
     }
     stepTop.scrollIntoView({

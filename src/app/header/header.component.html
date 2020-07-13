@@ -17,7 +17,10 @@
         </ul>
         <div id="phone">
             <i class="fas fa-phone"></i> (519) 588-5668
-            <button id="languageButton" (click)="changeLanguage()" >{{language}}</button>
+            <select [ngModel]="selectedLang" (ngModelChange)="changeLanguage($event)">
+                <option *ngFor="let lang of languages" [ngValue]="lang">{{ lang.displayText }}</option>
+            </select>
+            <!-- <button id="languageButton" (click)="changeLanguage()" >{{language}}</button> -->
         </div>
     </div>
 </nav>
