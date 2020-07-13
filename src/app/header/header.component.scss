@@ -25,6 +25,10 @@ select {
 	}
 }
 
+.languageBar {
+	display: none;
+}
+
 .fixed{
 	position: fixed;
 	z-index: ceil($number: 10);
@@ -108,9 +112,18 @@ select {
 @media only screen and (max-width:600px){
 	#header{
 		display: flex;
-		justify-content: center
+		justify-content: space-between;
+		align-items: center;
 	}
 	#headerName{
 		width: unset;
+	}
+	#headerNameText {
+		margin: 0;
+		padding: 0;
+	}
+	.languageBar {
+		display: block;
+		margin-right:10px;
 	}
 }

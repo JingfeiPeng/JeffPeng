@@ -13,14 +13,17 @@
                         [ngClass]="{ 'active': first }" >{{ "HEADER."+step.id | translate }}</a>
                 </li>
             </ng-container>
-            <!-- <li class="nav-item bold"><a class="nav-link"> {{ "HEADER.Resume"| translate }} </a></li> -->
         </ul>
         <div id="phone">
             <i class="fas fa-phone"></i> (519) 588-5668
             <select [ngModel]="selectedLang" (ngModelChange)="changeLanguage($event)">
                 <option *ngFor="let lang of languages" [ngValue]="lang">{{ lang.displayText }}</option>
             </select>
-            <!-- <button id="languageButton" (click)="changeLanguage()" >{{language}}</button> -->
         </div>
+    </div>
+    <div class="languageBar">
+        <select [ngModel]="selectedLang" (ngModelChange)="changeLanguage($event)">
+            <option *ngFor="let lang of languages" [ngValue]="lang">{{ lang.displayText }}</option>
+        </select>
     </div>
 </nav>
