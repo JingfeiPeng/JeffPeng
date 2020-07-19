@@ -13,6 +13,10 @@ $grey: #a19f9f;
   padding-right: 3rem;
 }
 
+.mobileImgView {
+  display: none;
+}
+
 .aboutMe {
   padding-top: $upDownSpacing;
   padding-bottom: $upDownSpacing;
@@ -33,6 +37,7 @@ $grey: #a19f9f;
       padding-top: 2rem;
       font-size: $textFont;
       color: $grey;
+      max-width: 70vw;
     }
   }
 }
@@ -40,6 +45,7 @@ $grey: #a19f9f;
 .list-description {
   @include flex(row);
   padding-top: 2rem;
+  max-width: 70vw;
   .titles {
     padding-right: 2vw;
     font-weight: 700;
@@ -59,7 +65,18 @@ $grey: #a19f9f;
 
 @media only screen and (max-width: 700px) {
   $textFont: 1rem;
+  .aboutMe {
+    padding-top: 0px;
+  }
   #aboutMeImg {
     display: none;
+  }
+  .mobileImgView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .innerContent {
+    width: 80vw;
   }
 }

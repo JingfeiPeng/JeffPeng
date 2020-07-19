@@ -9,11 +9,8 @@ import {fade} from '../../animations/fadeIn'
     fade
   ]
 })
-export class AboutMeComponent implements OnInit {
+export class AboutMeComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
