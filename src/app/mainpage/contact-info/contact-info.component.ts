@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import {faPhone, faMailBulk, faEnvelope  } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
   selector: 'app-contact-info',
   templateUrl: './contact-info.component.html',
-  styleUrls: ['./contact-info.component.scss']
+  styleUrls: ['./contact-info.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactInfoComponent implements OnInit {
   faPhone = faPhone
