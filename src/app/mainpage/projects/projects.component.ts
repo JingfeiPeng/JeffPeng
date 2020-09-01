@@ -1,28 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import {ProjectInfo} from '../../models'
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ProjectInfo } from '../../models'
 import { projectData } from './projectData';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProjectsComponent implements OnInit {
-  projects : ProjectInfo[] = projectData;
+export class ProjectsComponent {
+  projects: ProjectInfo[] = projectData;
   displayProjectDetail: boolean = false;
   projectDetail = null
 
   constructor() { }
 
-  ngOnInit() {
-  }
-  
-  showDetail(index: number){
+  showDetail(index: number) {
     this.displayProjectDetail = true;
     this.projectDetail = this.projects[index]
   }
-  closeDetail(){
+
+  closeDetail() {
     this.displayProjectDetail = false;
   }
-
 }

@@ -12,7 +12,7 @@ export class ScrollScreenAnimationComponent implements OnInit {
   imageWidth: number  = 150;
   imageheight : number = 120;
   screenWidth : number =window.innerWidth;
-  picturesList : string[] = ["code3.jpg",'code1.png',"code2.jpeg", "code4.png", "code5.png", "code6.png", "code7.png", "react.png"]
+  picturesList : string[] = ['code1.png',"code2.jpeg", "code4.png", "code5.png", "code6.png", "code7.png", "react.png"]
   picturesListTop: number = 1711.625;
   picturesToShow: number = this.picturesList.length;
   constructor(public el: ElementRef) { }

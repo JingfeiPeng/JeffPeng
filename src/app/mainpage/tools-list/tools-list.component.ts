@@ -1,50 +1,47 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 enum TechStacks {
   frontEnd = "FRONT_END",
   backEnd = "BACK_END",
   others = "OTHERS",
-  dataScience='DATA_SCIENCE'
+  dataScience = 'DATA_SCIENCE'
 }
 
 @Component({
   selector: 'app-tools-list',
   templateUrl: './tools-list.component.html',
-  styleUrls: ['./tools-list.component.scss']
+  styleUrls: ['./tools-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ToolsListComponent implements OnInit {
+export class ToolsListComponent {
   TechStacks = TechStacks;
-  techOrders = [TechStacks.frontEnd, TechStacks.backEnd,TechStacks.dataScience, TechStacks.others]
+  techOrders = [TechStacks.frontEnd, TechStacks.backEnd, TechStacks.dataScience, TechStacks.others]
   techs = {
-    [TechStacks.frontEnd]: ["React", "React Native", "Redux",  "Angular", "Rxjx", "NgRx", "Electron", "Javascript/Typescript",
-    "HTML", "CSS", "SCSS", "Gulp", "Apollo", "gql", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg"],
-    [TechStacks.dataScience]:['Python','Numpy','Pandas','Seaborn','matplotlib','Scikit-learn',"Tensorflow","Keras"],
-    [TechStacks.backEnd]: ["Node", "Express", "Flask", "Psycopg2", "GraphQL", "Socket.io","Java","Spring", "Spring Boot", "PHP", "PostgresSQL","MongoDB", "Mongoose", "Django","SQL"],
-    [TechStacks.others] :["C", "C++","Python", "PyGame", "Tensorflow", "Numpy", "docker", "Git", "SVN", "Linux", "Bash","Vim", "UML", "Heroku","Jest", "Mocha", "Chai"]
+    [TechStacks.frontEnd]: ["React", "React Native", "Redux", "Angular", "Rxjx", "NgRx", "Electron", "Javascript/Typescript",
+      "HTML", "CSS", "SCSS", "Gulp", "Apollo", "gql", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg"],
+    [TechStacks.dataScience]: ['Python', 'Numpy', 'Pandas', 'Seaborn', 'matplotlib', 'Scikit-learn', "Tensorflow", "Keras"],
+    [TechStacks.backEnd]: ["Node", "Objection.js", 'Inversify', "Express", "Flask", "Psycopg2", "GraphQL", "Socket.io", "Java", "Spring", "Spring Boot",
+      "PHP", "PostgresSQL", "MongoDB", "Mongoose", "Django", "SQL"],
+    [TechStacks.others]: ["C", "C++", "Python", "PyGame", "Tensorflow", "Numpy", "docker", "Git", "SVN", "Linux",
+      "Bash", "Vim", "UML", "Heroku", "Jest", "Mocha", "Chai"]
   }
-  activeTech : TechStacks = TechStacks.frontEnd;
+  activeTech: TechStacks = TechStacks.frontEnd;
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  highlight(stack: TechStacks){
+  highlight(stack: TechStacks) {
     this.activeTech = stack;
   }
 
-  styleType(stack: TechStacks){
-    if (stack !== this.activeTech){
-      return {
+  styleType(stack: TechStacks) {
+    return stack !== this.activeTech ?
+      {
         "color": "rgb(168, 165, 165)",
         "transition": "0.5s ease"
       }
-    } else {
-      return {
+      : {
         "color": "black",
         "transition": "0.5s ease"
       }
-    }
   }
-
 }
