@@ -62,4 +62,7 @@ export class SpecificDetailComponent implements OnInit, OnChanges {
     // this.images = [];
   }
 
+  openURL(url: string) {
+    window.open(url, '_blank');
+  }
 }

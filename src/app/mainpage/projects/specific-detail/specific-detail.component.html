@@ -38,9 +38,8 @@
         </div>
     </div>
     <p-footer>
-        <a [href]="projectDetail?.githubLink" target="_blank">
-            <button pButton class="ui-button-success" type="button" label="Vist Code Repo"
-            icon="pi pi-arrow-right" [iconPos]="'left'"></button></a>
+        <button pButton class="ui-button-success" type="button" label="Vist Code Repo" [disabled]="projectDetail?.githubLink==''"
+            icon="pi pi-arrow-right" [iconPos]="'left'" (click)="openURL(projectDetail?.githubLink)"></button>
         <button pButton class=".ui-button-info" type="button" label="Close"
             (click)="toggleDialog()" icon="pi pi-check" [iconPos]="'left'"></button>
     </p-footer>

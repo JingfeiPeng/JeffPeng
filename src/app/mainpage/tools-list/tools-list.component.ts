@@ -18,7 +18,7 @@ export class ToolsListComponent {
   techOrders = [TechStacks.frontEnd, TechStacks.backEnd, TechStacks.dataScience, TechStacks.others]
   techs = {
     [TechStacks.frontEnd]: ["React", "React Native", "Redux", "Angular", "Rxjx", "NgRx", "Electron", "Javascript/Typescript",
-      "HTML", "CSS", "SCSS", "Gulp", "Apollo", "gql", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg"],
+      "HTML", "CSS", "SCSS", "Gulp", "Apollo", "jQuery", "Bootstrap", "Angular Material", "PrimeReact", "PrimeNg",'JavaFx', 'Android'],
     [TechStacks.dataScience]: ['Python', 'Numpy', 'Pandas', 'Seaborn', 'matplotlib', 'Scikit-learn', "Tensorflow", "Keras"],
     [TechStacks.backEnd]: ["Node", "Objection.js", 'Inversify', "Express", "Flask", "Psycopg2", "GraphQL", "Socket.io", "Java", "Spring", "Spring Boot",
       "PHP", "PostgresSQL", "MongoDB", "Mongoose", "Django", "SQL"],

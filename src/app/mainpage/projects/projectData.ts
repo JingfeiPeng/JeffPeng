@@ -51,6 +51,52 @@ export const projectData : ProjectInfo[] = [
         ]
     },
     {
+      title:"PDF Reader",
+      techs:"Java & Android",
+      description:"An Android app that allows user to make anotations on PDF similar to OneNote",
+      githubLink:"",
+      pictureLink:"android/PDF_reader.jpg",
+      techsUsedList:["Java","Android"],
+      picturesList:["android/PDF_reader.jpg"],
+      additionalInfo:[
+        "An Android app that allows user to make anotations on PDF",
+        'Users can use pen, highlighter and eraser',
+        'Supports redo and undo actions',
+        'Support Zoom and Pan around the PDF',
+        "Github link unavaliable since this is an academic project"
+      ]
+    },
+    {
+      title:"SketchIt",
+      techs:"Java & JavaFx",
+      description:"A Vector-drawing Computer App that allows a user to select shapes to draw, set their properties, and draw the shapes on-screen",
+      githubLink:"",
+      pictureLink:"javaFx/screenshot1.png",
+      techsUsedList:["Java","JavaFx", "Gradle"],
+      picturesList:["javaFx/screenshot1.png"],
+      additionalInfo:[
+        "A 2D GUI snake Game built using JavaFx", 
+        "This app allows a user to select shapes to draw, set their properties, and draw the shapes on-screen, with ability to resize shapes",
+        "User can select line thickness, line style for drawing lines and shape's borders",
+        "Colour and fill colours can be selected for drawing shapes",
+        "6 modes avaliable: select, erase, line, circle rectangle, and fill colour",
+        "Github link unavaliable since this is an academic project"
+      ]
+    },
+    {
+      title:"Snake Game",
+      techs:"Java & JavaFx",
+      description:"A 2D graphical snake game with 3 levels",
+      githubLink:"",
+      pictureLink:"snakegame/snakegame.png",
+      techsUsedList:["Java","JavaFx", "Gradle"],
+      picturesList:["snakegame/snakegame.png"],
+      additionalInfo:[
+        "A 2D GUI snake Game built using JavaFx",
+        "Github link unavaliable since this is an academic project"
+      ]
+    },
+    {
       title:"Energy Station Backend",
       techs:"Node & Express & MongoDB",
       description:"Created backend server using Node, Express, Mongoose to handle APIs used in the app. Implemented middleware functions to log errors to text file, authenticate users, and handle exceptions",
@@ -108,16 +154,16 @@ export const projectData : ProjectInfo[] = [
           "Utlized Angular translation module for French Translation. Though French translation text was created using Google translate."
         ]
     },
-    // {
-    //   title:"Chat App",
-    //   techs:"React & Node & Express & Socket.io",
-    //   description:"a real-time chat applications built using react/react hooks. backend uses Node, Express, and Socket.io",
-    //   githubLink:"https://github.com/JingfeiPeng/JingfeiOnlineChatApp",
-    //   pictureLink:"chatApp.png",
-    //   techsUsedList:["React", "Node","Express", "Socket.io"],
-    //   picturesList:["chatApp.png"],
-    //   additionalInfo:["A Real Time Chat Application"]
-    // },
+    {
+      title:"Chat App",
+      techs:"React & Node & Express & Socket.io",
+      description:"a real-time chat applications built using react/react hooks. backend uses Node, Express, and Socket.io",
+      githubLink:"https://github.com/JingfeiPeng/JingfeiOnlineChatApp",
+      pictureLink:"chatApp.png",
+      techsUsedList:["React", "Node","Express", "Socket.io"],
+      picturesList:["chatApp.png"],
+      additionalInfo:["A Real Time Chat Application"]
+    },
     {
       title:"Object Model Mapper",
       techs:"React & Electron & Express",
@@ -127,8 +173,8 @@ export const projectData : ProjectInfo[] = [
       techsUsedList:["React", "Joint.Js", "PrimeReact", "Electron", "Node", "Express", "MongoDB", "Docker"],
       picturesList:["OMGWorkbench.png", "workbenchMappingsummary.png", "workbenchAddMapping.png", "mapperScreen.png", "OMGSelectWorkSpace.png"],
       additionalInfo:["A New Revolutional way to do Object Model Mapping", 
-        "The app is built using React, uses an express server, and both the frontend and backend are wrapped in electron to be a standalone desktop app. The node server is wrapped as a dependency in react app",
-        "Note: I have been authorized to display the images and description of this ongoing POC project. However, I am not authorized to share the source codes. Thus the github link has no code contents"]
+        "The app is built using React, uses an express server, and both the frontend and backend are wrapped in electron to be a standalone desktop app. The node server is wrapped as a dependency in react app"
+        ]
     },
     {
       title:"Graphical Sudoku Game ",
@@ -145,16 +191,16 @@ export const projectData : ProjectInfo[] = [
         "Designed and implemented responsive web user interfaces in Angular to handler user interactions with sudoku"
       ]
     },
-    {
-      title:"Recipe Builder",
-      techs:"React & GraphQL & MongoDB",
-      description:"A tool to help average guys/girls to remember cooking recipes",
-      githubLink:"https://github.com/JingfeiPeng/graphqlproject",
-      pictureLink:"underConstruction.png",
-      techsUsedList:["React", "Apollo", "GraphQL", "Node", "Express", "MongoDB","mlab"],
-      picturesList:["underConstruction.png"],
-      additionalInfo:["A tool to help average guys to remember cooking recipes",
-        "In progress in building a backend with Node/express, GraphQL ",
-        "In progress to build front-end with React, and apollo"]
-    },
+    // {
+    //   title:"Recipe Builder",
+    //   techs:"React & GraphQL & MongoDB",
+    //   description:"A tool to help average guys/girls to remember cooking recipes",
+    //   githubLink:"https://github.com/JingfeiPeng/graphqlproject",
+    //   pictureLink:"underConstruction.png",
+    //   techsUsedList:["React", "Apollo", "GraphQL", "Node", "Express", "MongoDB","mlab"],
+    //   picturesList:["underConstruction.png"],
+    //   additionalInfo:["A tool to help average guys to remember cooking recipes",
+    //     "In progress in building a backend with Node/express, GraphQL ",
+    //     "In progress to build front-end with React, and apollo"]
+    // },
   ]
