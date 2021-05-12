@@ -12,7 +12,7 @@ export const experiencesData: Experience[] = [
             }
         ],
         techsUsed: ["Python","Numpy","Panadas", "SUMO traffic sim", "React", "Tornado", "Bash"],
-        period: "Jan 2020 - Aug 2020",
+        period: "Jan 2021 - Apr 2021",
         logoImg: "huawei_logo.jpg",
         show: false
     },
