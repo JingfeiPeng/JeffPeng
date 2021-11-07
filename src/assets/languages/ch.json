@@ -29,48 +29,8 @@
         "Languages": "会的语言",
         "LanguagesVal": "英语，中文"
     },
+    "MY_PREVIOUS_EXPERIENCES":"实习经历",
     "PROJECTS":{
         "PROJECTS":"我的项目"
-    },
-    "CONTACT_ME":{
-        "CONTACT_ME":"Contact Me"
-    },
-    "CAPCO":{
-        "TITLE":"Software Engineering Internship",
-        "DESCRIPTION_1":{
-            "TITLE":"Prototyped in a small team the full stack of Object Model Mapper with react for BSAs to automate object modeling process. Distributed the app in both web-based and standalone desktop versions.",
-            "D1_D1":"Utilized MongoDB to store data for web-based version and used Node to store data as files for desktop version",
-            "D1_D2":"The desktop version is built by packaging the react app using Electron and having the server as a dependency"
-        },
-        "DESCRIPTION_2":{
-            "TITLE":"Developed the full stack of two Angular Proof of Concepts(POC) apps both independently and in small agile teams for bank clients",
-            "D2_D1":"Angular POC 1 helps Payment Service Providers to register with the bank client through a set of registration proccess",
-            "D2_D2":"Angular POC 2 helps HR to automate the onboarding process of new employees and see employees' progress in registration",
-            "D2_D3":"Example Feature: Implemented elastic search algorithm in backend for type ahead searches in angular app"
-        }
-    },
-    "MMC":{
-        "TITLE":"Software Developer Internship",
-        "DESCRIPTION_1":{
-            "TITLE":"Independently developed a mobile app where insurance agents can review business data for company’s clients"
-        },
-        "DESCRIPTION_2":{
-            "TITLE":"Added Redux reducers and actions to update the store and increase code maintainability"
-        },
-        "DESCRIPTION_3":{
-            "TITLE":"Successfully released the mobile app to production after numerous demo and feedback cycles"
-        }
-    },
-    "Perfect Financial Solutions":{
-        "TITLE":"Web Developer",
-        "DESCRIPTION_1":{
-            "TITLE":"Developed a PHP program to manage a SQL client database to automate file filling and printing process"
-        },
-        "DESCRIPTION_2":{
-            "TITLE":"Created the full stack of a business information system for the company to manage client files, and for clients to create account, retrieve password and view their files upon login."
-        },
-        "DESCRIPTION_3":{
-            "TITLE":"Built interactive front-end web pages and created backend of aforementioned systems with PHP"
-        }
     }
 }

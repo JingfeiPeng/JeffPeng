@@ -5,7 +5,7 @@ export const experiencesData: Experience[] = [
         title: 'Huawei',
         descriptions: [
             {
-                title: "DESCRIPTION_1", details: ["D1_D0", "D1_D1","D1_D2"]
+                title: "DESCRIPTION_1", details: ["D1_D0", "D1_D1","D1_D2","D1_D3"]
             },
             {
                 title: 'DESCRIPTION_2', details: []

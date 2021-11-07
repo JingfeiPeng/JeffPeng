@@ -29,6 +29,7 @@
         "Languages": "Languages",
         "LanguagesVal": "English, Chinese Mandarin"
     },
+    "MY_PREVIOUS_EXPERIENCES":"My Previous Experiences",
     "PROJECTS": {
         "PROJECTS": "Projects"
     },
@@ -41,7 +42,8 @@
             "TITLE": "Developer on <a href='https://github.com/huawei-noah/SMARTS'  target='_blank'>SMARTS</a>, a multi-agent autonomous driving simulation platform for Reinforcement Learning",
             "D1_D0": "Resolved 35 issues and developed core features on SMARTS and Envision, a server-client based 3D visualization web app built with React and Tornado",
             "D1_D1": "Supported imitation learning research, speed up training by 3 times through code restructuring and adding new APIs",
-            "D1_D2": "Introduced adversarial multi-agent reinforcement training demo modeled on zero-sum game using Rllib and Pytorch model"
+            "D1_D2": "Introduced adversarial multi-agent reinforcement training demo modeled on zero-sum game using Rllib and Pytorch model",
+            "D1_D3": "Developed control dashboard on Envision in React to control showing and hiding information in data visualization"
         },
         "DESCRIPTION_2": {
             "TITLE": "Ensured delivery of Behavioral Model milestones through project management, increased work efficiency by 30% through automating manual tasks in bash and report generation in Python and Pandas"
