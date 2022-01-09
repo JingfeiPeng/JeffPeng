@@ -35,6 +35,22 @@
     "CONTACT_ME": {
         "CONTACT_ME": "Contact Me"
     },
+    "Wish": {
+        "TITLE":"Software Engineer Internship",
+        "DESCRIPTION_1": {
+            "TITLE": "Built the foundation of Wish Assistant microservice’s next-generation customer support chatbot edit tool to allow users to edit chatbot behavior without changing code",
+            "D1_D0": "Implemented front-end using React & Redux, visualized chatbot as an interactive decision graph and enabled editing",
+            "D1_D1": "Built microservice endpoints in Golang, Protocol Buffer, MongoDB to support UI",
+            "D1_D2": "Designed and implemented version conflict detection and auto-merging algorithm in Golang under optimal run time to enable multiple users concurrent use of edit tool"
+        },
+        "DESCRIPTION_2": {
+            "TITLE": "Introduced whole order cancellation flow in Wish Assistant monolithic architecture in Python for all item types to streamline customer orders canceling process"
+        },
+        "DESCRIPTION_3": {
+            "TITLE": "Migrated Wish Access/Plus chat flow from monolithic architecture to microservice in Golang",
+            "D1_D0": "Refactored and implemented scalable solution on UI to switch between calling microservice server or the main server based on user eligibility"
+        }
+    },
     "Huawei": {
         "TITLE": "Software Engineer Internship",
         "DESCRIPTION_1": {

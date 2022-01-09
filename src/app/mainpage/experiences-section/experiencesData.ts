@@ -2,6 +2,24 @@ import { Experience } from "../../models/experience.model";
 
 export const experiencesData: Experience[] = [
     {
+        title: 'Wish',
+        descriptions: [
+            {
+                title: "DESCRIPTION_1", details: ["D1_D0", "D1_D1","D1_D2"]
+            },
+            {
+                title: 'DESCRIPTION_2', details: []
+            },
+            {
+                title:'DESCRIPTION_3', details: ["D1_D0"]
+            }
+        ],
+        techsUsed: ["Python","Numpy","Panadas", "SUMO traffic sim", "React", "Tornado", "Bash"],
+        period: "Jan 2021 - Apr 2021",
+        logoImg: "wish.jpg",
+        show: false
+    },
+    {
         title: 'Huawei',
         descriptions: [
             {
