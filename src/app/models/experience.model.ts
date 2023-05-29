@@ -4,7 +4,7 @@ export interface Experience {
     techsUsed:string[],
     period:string,
     logoImg:string,
-    show: boolean
+    show?: boolean
 }
 
 export interface Description{

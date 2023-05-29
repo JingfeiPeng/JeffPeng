@@ -35,6 +35,12 @@
     "CONTACT_ME": {
         "CONTACT_ME": "Contact Me"
     },
+    "Amazon": {
+        "TITLE":"Software Development Engineer",
+        "DESCRIPTION_1": {
+            "TITLE": "Backend services and Native AWS development with Java, Python, Typescript, and various AWS products"
+        }
+    }, 
     "Wish": {
         "TITLE":"Software Engineer Internship",
         "DESCRIPTION_1": {

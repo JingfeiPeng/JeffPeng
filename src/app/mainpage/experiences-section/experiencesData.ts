@@ -2,6 +2,17 @@ import { Experience } from "../../models/experience.model";
 
 export const experiencesData: Experience[] = [
     {
+        title: 'Amazon',
+        descriptions: [
+            {
+                title: 'DESCRIPTION_1', details: []
+            }
+        ],
+        techsUsed: ["Java","Python","Typescript", "Ruby on Rails"],
+        period: "May 2022 - Current",
+        logoImg: "amazon.png",
+    },
+    {
         title: 'Wish',
         descriptions: [
             {
@@ -17,7 +28,6 @@ export const experiencesData: Experience[] = [
         techsUsed: ["Python","Numpy","Panadas", "SUMO traffic sim", "React", "Tornado", "Bash"],
         period: "Jan 2021 - Apr 2021",
         logoImg: "wish.jpg",
-        show: false
     },
     {
         title: 'Huawei',
@@ -32,7 +42,6 @@ export const experiencesData: Experience[] = [
         techsUsed: ["Python","Numpy","Panadas", "SUMO traffic sim", "React", "Tornado", "Bash"],
         period: "Jan 2021 - Apr 2021",
         logoImg: "huawei_logo.jpg",
-        show: false
     },
     {
         title: 'DarwinAI',
@@ -47,7 +56,6 @@ export const experiencesData: Experience[] = [
         techsUsed: ['Python', 'Tensorflow', 'Typescript', 'Angular', 'rxjs', 'NgRx', 'Jest', 'React', 'Node', 'Express', 'Inversify', 'Objection.js', 'PostreSQL'],
         period: "May 2020 - Aug 2020",
         logoImg: "darwinai.jpg",
-        show: false
     }, {
         title: 'CAPCO',
         descriptions: [
@@ -61,7 +69,6 @@ export const experiencesData: Experience[] = [
             'Joint.js', 'Node/Express', 'Electron', 'MongoDB', 'docker'],
         period: "Sept 2019 - Dec 2019",
         logoImg: "capco.jpeg",
-        show: false
     },
     {
         title: 'MMC',
@@ -75,7 +82,6 @@ export const experiencesData: Experience[] = [
         techsUsed: ["React Native", "Redux", "UML", "SQL"],
         period: "Jan 2019 - Apr 2019",
         logoImg: "mmc.png",
-        show: false
     },
     {
         title: "Perfect Financial Solutions",
@@ -89,6 +95,5 @@ export const experiencesData: Experience[] = [
         techsUsed: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "PHP", "SQL"],
         period: "May 2018 - Aug 2018",
         logoImg: "pfs.png",
-        show: false
     }
 ]
