@@ -82,18 +82,5 @@ export const experiencesData: Experience[] = [
         techsUsed: ["React Native", "Redux", "UML", "SQL"],
         period: "Jan 2019 - Apr 2019",
         logoImg: "mmc.png",
-    },
-    {
-        title: "Perfect Financial Solutions",
-        descriptions: [{
-            title: "DESCRIPTION_1", details: []
-        }, {
-            title: "DESCRIPTION_2", details: []
-        }, {
-            title: "DESCRIPTION_3", details: []
-        }],
-        techsUsed: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "PHP", "SQL"],
-        period: "May 2018 - Aug 2018",
-        logoImg: "pfs.png",
     }
 ]
